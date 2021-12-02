@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>QS Home</title>
+    <meta name="viewport" content="width=device-width, initial-scal e=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/*Main Color Theme*/
+.w3-theme-l5 {color:#000 !important; background-color:#f2f2f2 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#d3d3d3 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#a6a6a6 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#7a7a7a !important}
+.w3-theme-l1 {color:#fff !important; background-color:#4e4e4e !important}
+.w3-theme-d1 {color:#fff !important; background-color:#1e1e1e !important}
+.w3-theme-d2 {color:#fff !important; background-color:#1b1b1b !important}
+.w3-theme-d3 {color:#fff !important; background-color:#171717 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#141414 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#111111 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#f2f2f2 !important}
+.w3-theme-dark {color:#fff !important; background-color:#111111 !important}
+.w3-theme-action {color:#fff !important; background-color:#111111 !important}
+
+.w3-theme {color:#fff !important; background-color:#222222 !important}
+.w3-text-theme {color:#222222 !important}
+.w3-border-theme {border-color:#222222 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#222222 !important}
+.w3-hover-text-theme:hover {color:#222222 !important}
+.w3-hover-border-theme:hover {border-color:#222222 !important}
+
+html{
+    height: 100%;
+}
+
+body {
+    background-color: #424242;
+    margin: 0;
+    height: 100%;
+}
+
+p, h1, h2, h3, h4{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #fff;
+}
+
+.sectionHeading{
+    margin: 100px;
+    flex-direction: none;
+}
+
+/* Top Navigation Bar Styling */
+.navList{
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navItem{
+    list-style: none;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.navItem a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: all 200ms ease-in;
+    padding: 0.5rem;
+    background-color: #333;
+    border-radius: 50px;
+}
+
+.navItem a:hover{
+    color: #ff9900;
+    background-color: #222222;
+}
+
+.navItem:first-child{
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.aButton{
+    background-color: #ff9900;
+}
+
+.buttonMain{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    background: #ff9900;
+    border: none;
+    outline: none;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color:#333;
+}
+
+.buttonMain:hover{
+    color:white;
+}
+
+.buttonMainHeader{
+    box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+}
+
+.buttonMainHeader:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.header{
+    display:flex;
+    max-height: 85%;
+    min-height: 60%;
+    padding: 60px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+
+    flex-wrap: wrap;
+}
+
+
+.headerItem{
+    display:flex;
+    flex: 1;
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headerItemImage{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+    box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+}
+
+.headerItemSecondary{
+    align-content: center;
+    word-wrap: break-word;
+    margin: 50px;
+}
+
+.headerUnderLine{
+    text-decoration: none;
+    background-image: linear-gradient(gray, gray);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50% 7px;
+}
+
+.headerItemMain{
+    text-align: left;
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: bottom;
+}
+
+
+.headerItemMainLogo{
+    flex: 1;
+    flex-direction: row;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.headerItemMainLogoImage{
+    width: 350px; 
+    height: 100px; 
+    margin-top: 25px;
+
+    justify-content: right;
+}
+
+.mainContent{
+    display:flex;
+    padding: 60px;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+
+.mainContentOne{
+    display: flex;
+    background-color: #3b3b3b;
+    padding: 50px;
+    z-index: 10;
+    border-radius: 25px;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+
+.mainContentOneInside{
+    display: flex;
+    z-index: 10;
+    border-radius: 25px;
+}
+
+.mainContentTwo{
+    display: flex;
+    background-color: #3b3b3b;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+.mainContentThree{
+    display: flex;
+    background-color: #3b3b3b;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+
+.shadow {
+  -webkit-filter: drop-shadow( 0px 5px 3px rgba(0,0,0,0.61));
+  filter: drop-shadow( 0px 0px 10px rgba(0,0,0,0.61));
+  /* Similar syntax to box-shadow */
+}
+
+.glow {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff9900, 0 0 20px #ff9900, 0 0 25px #ff9900, 0 0 30px #ffa51d, 0 0 35px #ff9900;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff7b00, 0 0 20px #ff7b00, 0 0 25px #ff9100, 0 0 30px #ff8818, 0 0 35px #ff7b00, 0 0 40px #ff891b;
+  }
+}
+
+img.hover-effect {
+  transition: 0.3s;
+}
+
+.hover-effect:hover {
+  opacity: 40%;
+}
+
+/* max-width: 1334px */
+@media screen and (max-width: 1400px) {
+    .headerItemMainLogoImage{
+        width: 350px; 
+        height: 100px; 
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .headerItemMain{
+        text-align: center;
+        padding-left: 0;
+        flex: 0;
+        align-items: center;
+    }
+
+    .headerItemMainLogo{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .headerItemSecondary{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerItemMainLogoImage{
+        width: 350px; 
+        height: 100px; 
+        margin-top: 0px;
+        align-self: center;
+        padding-left: 0px;
+    }
+
+    .headerItemMain{
+        text-align: center;
+        padding-left: 0;
+        flex: 0;
+        align-items: center;
+    }
+
+    .headerItemMainLogo{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .headerItemSecondary{
+        margin: 0px;
+    }
+
+    .headerItem{
+        display:flex;
+        flex: 1;
+        border: 2px;
+        flex-wrap: 0;
+        flex-direction: column;
+    }
+
+    .custom-shape-divider-bottom-1636603867 svg {
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+}
+
+</style>
+</header>
+<body>
+    <!-- NavBar -->
+    <navbar>
+        <ul class="navList">
+            <li class="navItem">
+                <a href="#" style="font-size:20px;"><b><img style="width:50%; height:80%;" src="QSlogowhite (1).png"></b></a>
+            </li>
+            <li class="navItem">
+                <a href="#experience"><b>Experience</b></a>
+            </li>
+            <li class="navItem">
+                <a href="#projects"><b>Projects</b></a>
+            </li>
+            <li class="navItem">
+                <button class="buttonMain" onclick="window.location.href='#games'"><b>Games</b></button>
+            </li>
+        </ul>
+    </navbar>
+        <!-- Header -->    
+    <div class="header">
+        <div class="headerItem">
+            <div  style="justify-content: center; margin: 100px auto 0px auto;" class="headerItem headerItemMain">
+                <div>
+                    <h1 class="w3-animate-left" style="font-size: 3rem;"><b><span class="glow">Quantam</span><br>Studios</b></h1>
+                </div>
+                <div>
+                    <img class="headerItemMainLogoImage w3-animate-right" src="QSlogowhite (1).png">
+                </div>
+            </div>
+        <div class="headerItem" style="justify-content: center;">
+                <h1 class="w3-animate-opacity" style="font-size: 3vh;"><b> &lt; Games, Websites, Simulations, and more... &gt;</b></h1>
+                <button href="#Recent" class="buttonMain w3-animate-bottom buttonMainHeader" style="width: 10rem; margin: 0 auto;"><b>Recent Projects</b></button>
+                <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
+                    <a href="https://github.com/Quantam-Studios"><i style="color:white;" class="fab fa-github w3-hover-opacity"></i></a>
+                    <a href="https://quantamstudios.itch.io/"><i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="mainContent">
+        <h1  id="experience" class=" w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Experience</b></h1>
+        <div class="mainContentOne" style="display: inline;">
+            <div style="width: 100%; display: block; align-content: left;">
+                <p style="justify-content: left;">I have used many different frame-works for a wide variety of projects ranging from apps to games. The languages, and frame-works I use the most are: C#, Unity, Dart, Flutter, CSS, HTML, Python, and Javascript.</p>
+            </div>
+            <div style="width: 100%; display: block; align-content: left;">
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg"/>
+                <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg"/>
+            </div>
+            <div style="width: 100%; display: block; align-content: left;"> 
+            </div>
+        </div>
+        <h1 id="projects" class="sectionHeading w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Projects</b></h1>
+        <div class="mainContentTwo">
+            
+        </div>
+        <h1 id="games" class="sectionHeading w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Games</b></h1>
+        <div class="mainContentThree">
+            
+        </div>
+    </div>
+
+</body>
+</html>
