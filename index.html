@@ -53,6 +53,13 @@ p, h1, h2, h3, h4{
 .sectionHeading{
     margin: 100px;
     flex-direction: none;
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+}
+
+.sectionHeadingBar{
+    box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
 }
 
 /* Top Navigation Bar Styling */
@@ -129,6 +136,23 @@ p, h1, h2, h3, h4{
   transform: scale(1.2); 
 }
 
+.buttonGit{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    background: rgb(27, 27, 27);
+    border: none;
+    outline: none;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color:#3b3b3b;
+}
+
+.buttonGit:hover{
+    color:white;
+}
+
 .header{
     display:flex;
     max-height: 85%;
@@ -181,6 +205,7 @@ p, h1, h2, h3, h4{
     flex-direction: row;
     display: inline-flex;
     justify-content: bottom;
+    margin: 100px auto 0px auto;
 }
 
 
@@ -239,21 +264,56 @@ p, h1, h2, h3, h4{
     box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
     -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
     -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-}
-.mainContentThree{
-    display: flex;
-    background-color: #3b3b3b;
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-}
+}   
 
 .shadow {
   -webkit-filter: drop-shadow( 0px 5px 3px rgba(0,0,0,0.61));
   filter: drop-shadow( 0px 0px 10px rgba(0,0,0,0.61));
   /* Similar syntax to box-shadow */
+}
+
+.card {
+  margin: 10px;
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.61);
+  width: 300px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-body {
+  display: block;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0px 10px 0px 10px;
+  min-height: 105px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  background-color: #ff9900;
+
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0px;
+  color: darkgray;
+}
+
+.playButton {
+    border-radius: 25px;
 }
 
 .glow {
@@ -319,6 +379,7 @@ img.hover-effect {
         padding-left: 0;
         flex: 0;
         align-items: center;
+        margin: 50px auto 0px auto;
     }
 
     .headerItemMainLogo{
@@ -367,7 +428,7 @@ img.hover-effect {
         <!-- Header -->    
     <div class="header">
         <div class="headerItem">
-            <div  style="justify-content: center; margin: 100px auto 0px auto;" class="headerItem headerItemMain">
+            <div  style="justify-content: center;" class="headerItem headerItemMain">
                 <div>
                     <h1 class="w3-animate-left" style="font-size: 3rem;"><b><span class="glow">Quantam</span><br>Studios</b></h1>
                 </div>
@@ -388,10 +449,12 @@ img.hover-effect {
 
     <!-- Main Content -->
     <div class="mainContent">
-        <h1  id="experience" class=" w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Experience</b></h1>
+        <!-- experience -->
+        <h1 id="eperience" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px"><b>Experience</b></h1>
+        <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 405px;"></p>
         <div class="mainContentOne" style="display: inline;">
             <div style="width: 100%; display: block; align-content: left;">
-                <p style="justify-content: left;">I have used many different frame-works for a wide variety of projects ranging from apps to games. The languages, and frame-works I use the most are: C#, Unity, Dart, Flutter, CSS, HTML, Python, and Javascript.</p>
+                <p style="justify-content: left;">I have used many different frameworks for a wide variety of projects ranging from apps to games. The languages, and frameworks I use the most are: C#, Unity, Dart, Flutter, CSS, HTML, Python, and Javascript.</p>
             </div>
             <div style="width: 100%; display: block; align-content: left;">
                 <img style="color: white; height: 50px; margin: 4px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg"/>
@@ -406,13 +469,78 @@ img.hover-effect {
             <div style="width: 100%; display: block; align-content: left;"> 
             </div>
         </div>
-        <h1 id="projects" class="sectionHeading w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Projects</b></h1>
+                <!-- projects -->
+                <h1 id="projects" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px"><b>Projects</b></h1>
+                <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 40px;"></p>
         <div class="mainContentTwo">
+
             
         </div>
-        <h1 id="games" class="sectionHeading w3-center w3-bottombar w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 40px;"><b>Games</b></h1>
-        <div class="mainContentThree">
-            
+                <!-- games -->
+        <h1 id="games" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px"><b>Games</b></h1>
+        <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 40px;"></p>
+        <div>
+            <div class="card w3-col l3 m4">
+                <div class="card-header">
+                    <img src="TPQuestLogo.png" alt="rover"/>
+                </div>
+                <div style="justify-content: left; text-align: left; padding: 10px;">
+                    <span class="tag">survival</span>
+                    <h4>TP QUEST</h4>
+                </div>
+                <div class="card-body">
+                    <p>Try and stay entertained, fed, and more in this survival game!</p>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonMain"><b>PLAY</b></button>
+                    </div>
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonGit"><b>GIT</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w3-col l3 m4">
+                <div class="card-header">
+                    <img src="PlatformerHellLogo.PNG" alt="rover"/>
+                </div>
+                <div style="justify-content: left; text-align: left; padding: 10px;">
+                    <span class="tag">bullet hell</span>
+                    <h4>PLATFORMER HELL</h4>
+                </div>
+                <div class="card-body">
+                    <p>Shoot and dash your way through enemies in a bullet hell turned platformer!</p>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonMain"><b>PLAY</b></button>
+                    </div>
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonGit"><b>GIT</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card w3-col l3 m4">
+                <div class="card-header">
+                    <img src="LightEmUpLogo.png" alt="rover"/>
+                </div>
+                <div style="justify-content: left; text-align: left; padding: 10px;">
+                    <span class="tag">top-down shooter</span>
+                    <h4>LIGHT EM UP!</h4>
+                </div>
+                <div class="card-body">
+                    <p style="padding-bottom: 10px;">A fast paced top down shooter that was made to teach my siblings how to code.</p>
+                </div>
+                <div style="display: flex;">
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonMain"><b>PLAY</b></button>
+                    </div>
+                    <div style="margin: 10px; justify-content: left; text-align: left;">
+                        <button class="buttonGit"><b>GIT</b></button>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
     </div>
 
