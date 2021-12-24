@@ -11,30 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-/*Main Color Theme*/
-.w3-theme-l5 {color:#000 !important; background-color:#f2f2f2 !important}
-.w3-theme-l4 {color:#000 !important; background-color:#d3d3d3 !important}
-.w3-theme-l3 {color:#000 !important; background-color:#a6a6a6 !important}
-.w3-theme-l2 {color:#fff !important; background-color:#7a7a7a !important}
-.w3-theme-l1 {color:#fff !important; background-color:#4e4e4e !important}
-.w3-theme-d1 {color:#fff !important; background-color:#1e1e1e !important}
-.w3-theme-d2 {color:#fff !important; background-color:#1b1b1b !important}
-.w3-theme-d3 {color:#fff !important; background-color:#171717 !important}
-.w3-theme-d4 {color:#fff !important; background-color:#141414 !important}
-.w3-theme-d5 {color:#fff !important; background-color:#111111 !important}
-
-.w3-theme-light {color:#000 !important; background-color:#f2f2f2 !important}
-.w3-theme-dark {color:#fff !important; background-color:#111111 !important}
-.w3-theme-action {color:#fff !important; background-color:#111111 !important}
-
-.w3-theme {color:#fff !important; background-color:#222222 !important}
-.w3-text-theme {color:#222222 !important}
-.w3-border-theme {border-color:#222222 !important}
-
-.w3-hover-theme:hover {color:#fff !important; background-color:#222222 !important}
-.w3-hover-text-theme:hover {color:#222222 !important}
-.w3-hover-border-theme:hover {border-color:#222222 !important}
-
 html{
     height: 100%;
 }
@@ -277,13 +253,13 @@ p, h1, h2, h3, h4{
   background-color: #3b3b3b;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.61);
-  width: 300px;
+  /* width: 280px; */
 }
 .card-header img {
   width: 100%;
-  height: 200px;
+  max-height: 300px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
 }
 .card-body {
   display: block;
@@ -291,7 +267,7 @@ p, h1, h2, h3, h4{
   text-align: left;
   align-items: flex-start;
   padding: 0px 10px 0px 10px;
-  min-height: 105px;
+  min-height: 100px;
 }
 
 .tag {
@@ -407,7 +383,7 @@ img.hover-effect {
 
 </style>
 </header>
-<body>
+<body id="home">
     <!-- NavBar -->
     <navbar>
         <ul class="navList">
@@ -450,8 +426,8 @@ img.hover-effect {
     <!-- Main Content -->
     <div class="mainContent">
         <!-- experience -->
-        <h1 id="eperience" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px"><b>Experience</b></h1>
-        <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 405px;"></p>
+        <h1 id="experience" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px; margin-top: 0px;"><b>Experience</b></h1>
+        <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 45px;"></p>
         <div class="mainContentOne" style="display: inline;">
             <div style="width: 100%; display: block; align-content: left;">
                 <p style="justify-content: left;">I have used many different frameworks for a wide variety of projects ranging from apps to games. The languages, and frameworks I use the most are: C#, Unity, Dart, Flutter, CSS, HTML, Python, and Javascript.</p>
@@ -479,70 +455,169 @@ img.hover-effect {
                 <!-- games -->
         <h1 id="games" class="sectionHeading w3-center w3-border-dark-grey" style="font-size: 3vh; margin-bottom: 0px"><b>Games</b></h1>
         <p class="w3-bottombar sectionHeadingBar w3-border-dark-grey" style="margin-bottom: 40px;"></p>
-        <div>
-            <div class="card w3-col l3 m4">
-                <div class="card-header">
-                    <img src="TPQuestLogo.png" alt="rover"/>
-                </div>
-                <div style="justify-content: left; text-align: left; padding: 10px;">
-                    <span class="tag">survival</span>
-                    <h4>TP QUEST</h4>
-                </div>
-                <div class="card-body">
-                    <p>Try and stay entertained, fed, and more in this survival game!</p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonMain"><b>PLAY</b></button>
-                    </div>
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonGit"><b>GIT</b></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card w3-col l3 m4">
-                <div class="card-header">
-                    <img src="PlatformerHellLogo.PNG" alt="rover"/>
-                </div>
-                <div style="justify-content: left; text-align: left; padding: 10px;">
-                    <span class="tag">bullet hell</span>
-                    <h4>PLATFORMER HELL</h4>
-                </div>
-                <div class="card-body">
-                    <p>Shoot and dash your way through enemies in a bullet hell turned platformer!</p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonMain"><b>PLAY</b></button>
-                    </div>
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonGit"><b>GIT</b></button>
-                    </div>
-                </div>
-            </div>
-            <div class="card w3-col l3 m4">
-                <div class="card-header">
-                    <img src="LightEmUpLogo.png" alt="rover"/>
-                </div>
-                <div style="justify-content: left; text-align: left; padding: 10px;">
-                    <span class="tag">top-down shooter</span>
-                    <h4>LIGHT EM UP!</h4>
-                </div>
-                <div class="card-body">
-                    <p style="padding-bottom: 10px;">A fast paced top down shooter that was made to teach my siblings how to code.</p>
-                </div>
-                <div style="display: flex;">
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonMain"><b>PLAY</b></button>
-                    </div>
-                    <div style="margin: 10px; justify-content: left; text-align: left;">
-                        <button class="buttonGit"><b>GIT</b></button>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
 
+        <!-- full games -->
+        <h1 class="sectionHeading" style="text-align: center; font-size: 3vh; margin: 0px; padding-left: 10px; padding-bottom: 20px;">Full Releases</h1>
+        <div class="w3-row">
+            <div class="">
+                <div class="card w3-col l3 m5">
+                    <div class="card-header">
+                        <img src="TPQuestLogo.png" alt="rover"/>
+                    </div>
+                    <div style="justify-content: left; text-align: left; padding: 10px;">
+                        <span class="tag">survival</span>
+                        <h4>TP QUEST</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Try and stay entertained, fed, and more in this survival game!</p>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin: 10px; justify-content: left; text-align: left;">
+                            <button onClick="window.location.href='https://quantamstudios.itch.io/tp-quest'" class="buttonMain"><b>PLAY</b></button>
+                        </div>
+                        <div style="margin: 10px; justify-content: left; text-align: left;">
+                            <button onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'" class="buttonGit"><b>GIT</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w3-col l3 m5">
+                    <div class="card-header">
+                        <img src="PlatformerHellLogo.PNG" alt="rover"/>
+                    </div>
+                    <div style="justify-content: left; text-align: left; padding: 10px;">
+                        <span class="tag">bullet hell</span>
+                        <h4>PLATFORMER HELL</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Shoot and dash your way through enemies in a bullet hell turned platformer!</p>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin: 10px; justify-content: left; text-align: left;">
+                            <button onClick="window.location.href='https://quantamstudios.itch.io/platformer-hell'" class="buttonMain"><b>PLAY</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w3-col l3 m5">
+                    <div class="card-header">
+                        <img src="LightEmUpLogo.png" alt="rover"/>
+                    </div>
+                    <div style="justify-content: left; text-align: left; padding: 10px;">
+                        <span class="tag">top-down shooter</span>
+                        <h4>LIGHT EM UP!</h4>
+                    </div>
+                    <div class="card-body">
+                        <p style="padding-bottom: 10px;">A fast paced top down shooter that was made to teach my siblings how to code.</p>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin: 10px; justify-content: left; text-align: left;">
+                            <button onClick="window.location.href='https://quantamstudios.itch.io/light-em-up'" class="buttonMain"><b>PLAY</b></button>
+                        </div>
+                        <div style="margin: 10px; justify-content: left; text-align: left;">
+                            <button onClick="window.location.href='https://github.com/Quantam-Studios/LIGHT-EM-UP'" class="buttonGit"><b>GIT</b></button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+              <!-- Game Jam Games -->
+              <h1 class="sectionHeading" style="text-align: center; font-size: 3vh; margin: 0px; padding-left: 10px; padding-bottom: 20px; padding-top: 20px;">Game Jam Submissions</h1>           
+              <div class="w3-row">
+                <div style="justify-content: center; align-items: center;">
+                    <div class="card w3-col l3 m5">
+                        <div class="w3-card">
+                            <div class="card-header">
+                                <img src="ElementalTanksLogo.PNG" alt="rover"/>
+                            </div>
+                            <div style="justify-content: left; text-align: left; padding: 10px;">
+                                <span class="tag">top-down shooter</span>
+                                <h4>ELEMENTAL TANKS</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Made in 48 hours for the GMTK 2021 gam Jam! A game of changing form to take on different types of tanks</p>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="margin: 10px; justify-content: left; text-align: left;">
+                                    <button onClick="window.location.href='https://quantamstudios.itch.io/elementaltanks'" class="buttonMain"><b>PLAY</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w3-col l3 m5">
+                        <div class="w3-card">
+                            <div class="card-header">
+                                <img src="PlatformerHellJamEditionLogo.png" alt="rover"/>
+                            </div>
+                            <div style="justify-content: left; text-align: left; padding: 10px;">
+                                <span class="tag">bullet hell</span>
+                                <h4>PLATFORMER HELL JAM EDITION</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Made in 48 hours for the Score Space 12 game jam! A "bullet hell" game with platformer elements!</p>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="margin: 10px; justify-content: left; text-align: left;">
+                                    <button onClick="window.location.href='https://quantamstudios.itch.io/platformer-hell-jam-edition'" class="buttonMain"><b>PLAY</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w3-col l3 m5">
+                        <div class="w3-card">
+                            <div class="card-header">
+                                <img src="ChromaticDoorsLogo.png" alt="rover"/>
+                            </div>
+                            <div style="justify-content: left; text-align: left; padding: 10px;">
+                                <span class="tag">puzzle</span>
+                                <h4>CHROMATIC DOORS</h4>
+                            </div>
+                            <div class="card-body">
+                                <p style="padding-bottom: 10px;">Made in 4 days for the 101 Game Jam, A game of opening and closing different colored doors.</p>
+                            </div>
+                            <div style="display: flex;">
+                                <div style="margin: 10px; justify-content: left; text-align: left;">
+                                    <button onClick="window.location.href='https://quantamstudios.itch.io/chromatic-doors'" class="buttonMain"><b>PLAY</b></button>
+                                </div>
+                                <div style="margin: 10px; justify-content: left; text-align: left;">
+                                    <button onClick="window.location.href='https://github.com/Quantam-Studios/Chromatic-Doors'" class="buttonGit"><b>GIT</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w3-col l3 m5 w3-card">
+                        <div class="w3-card">
+                             <div class="card-header">
+                            <img src="TPQuestJamEditionLogo.png" alt="rover"/>
+                        </div>
+                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                            <span class="tag">survival</span>
+                            <h4>TP QUEST JAM EDITION</h4>
+                        </div>
+                        <div class="card-body">
+                            <p style="padding-bottom: 10px;">Made in 48 hours for the Isolate Togther game jam! A game where you are trapped in a house with infected people.</p>
+                        </div>
+                        <div style="display: flex;">
+                            <div style="margin: 10px; justify-content: left; text-align: left;">
+                                <button onClick="window.location.href='https://quantamstudios.itch.io/tp-quest-jam-edition'" class="buttonMain"><b>PLAY</b></button>
+                            </div>
+                            <div style="margin: 10px; justify-content: left; text-align: left;">
+                                <button onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'" class="buttonGit"><b>GIT</b></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    <!-- footer -->
+    <footer class="w3-center w3-display-container" style="background-color: #222222;">
+        <div style="padding: 20px;">
+            <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section" style="color: white;">
+              <a href="https://github.com/Quantam-Studios"><i class="fab fa-github w3-hover-opacity"></i></a>
+              <a href="https://quantamstudios.itch.io/"><i class="fab fa-itch-io w3-hover-opacity"></i></a>
+            </div>
+            <p style="padding: 10px; padding-bottom: 0px; font-size: 10px; opacity: 0.4;">© Copyright 2021-2022</p>
+        </div>
+      </footer>
 </body>
 </html>
