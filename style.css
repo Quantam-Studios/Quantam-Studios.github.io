@@ -1,0 +1,369 @@
+html{
+    height: 100%;
+}
+
+body {
+    background-color: #424242;
+    margin: 0;
+    height: 100%;
+}
+
+p, h1, h2, h3, h4{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #fff;
+}
+
+.sectionHeading{
+    margin: 100px;
+    flex-direction: none;
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+}
+
+.sectionHeadingBar{
+    box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+}
+
+/* Top Navigation Bar Styling */
+.navList{
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navItem{
+    list-style: none;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.navItem a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: all 200ms ease-in;
+    padding: 0.5rem;
+    background-color: #333;
+    border-radius: 50px;
+}
+
+.navItem a:hover{
+    color: #ff9900;
+    background-color: #222222;
+}
+
+.navItem:first-child{
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.aButton{
+    background-color: #ff9900;
+}
+
+.buttonMain{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    background: #ff9900;
+    border: none;
+    outline: none;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color:#333;
+}
+
+.buttonMain:hover{
+    color:white;
+}
+
+.buttonMainHeader{
+    box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+}
+
+.buttonMainHeader:hover{
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+.buttonGit{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    background: rgb(27, 27, 27);
+    border: none;
+    outline: none;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color:#3b3b3b;
+}
+
+.buttonGit:hover{
+    color:white;
+}
+
+.header{
+    display:flex;
+    max-height: 85%;
+    min-height: 60%;
+    padding: 60px;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+
+    flex-wrap: wrap;
+}
+
+
+.headerItem{
+    display:flex;
+    flex: 1;
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headerItemImage{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+    box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+}
+
+.headerItemSecondary{
+    align-content: center;
+    word-wrap: break-word;
+    margin: 50px;
+}
+
+.headerUnderLine{
+    text-decoration: none;
+    background-image: linear-gradient(gray, gray);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 50% 7px;
+}
+
+.headerItemMain{
+    text-align: left;
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: bottom;
+    margin: 100px auto 0px auto;
+}
+
+
+.headerItemMainLogo{
+    flex: 1;
+    flex-direction: row;
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.headerItemMainLogoImage{
+    width: 350px; 
+    height: 100px; 
+    margin-top: 25px;
+
+    justify-content: right;
+}
+
+.mainContent{
+    display:flex;
+    padding: 60px;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+
+.mainContentOne{
+    display: flex;
+    background-color: #3b3b3b;
+    padding: 50px;
+    z-index: 10;
+    border-radius: 25px;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}
+
+.mainContentOneInside{
+    display: flex;
+    z-index: 10;
+    border-radius: 25px;
+}
+
+.mainContentTwo{
+    display: flex;
+    background-color: #3b3b3b;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+}   
+
+.shadow {
+  -webkit-filter: drop-shadow( 0px 5px 3px rgba(0,0,0,0.61));
+  filter: drop-shadow( 0px 0px 10px rgba(0,0,0,0.61));
+  /* Similar syntax to box-shadow */
+}
+
+.card {
+  margin: 10px;
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.61);
+  /* width: 280px; */
+}
+.card-header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.card-body {
+  display: block;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0px 10px 0px 10px;
+  min-height: 100px;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  background-color: #ff9900;
+
+}
+
+.card-body p {
+  font-size: 13px;
+  margin: 0px;
+  color: darkgray;
+}
+
+.playButton {
+    border-radius: 25px;
+}
+
+.glow {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff9900, 0 0 20px #ff9900, 0 0 25px #ff9900, 0 0 30px #ffa51d, 0 0 35px #ff9900;
+  }
+  
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff7b00, 0 0 20px #ff7b00, 0 0 25px #ff9100, 0 0 30px #ff8818, 0 0 35px #ff7b00, 0 0 40px #ff891b;
+  }
+}
+
+img.hover-effect {
+  transition: 0.3s;
+}
+
+.hover-effect:hover {
+  opacity: 40%;
+}
+
+/* max-width: 1334px */
+@media screen and (max-width: 1400px) {
+    .headerItemMainLogoImage{
+        width: 350px; 
+        height: 100px; 
+        margin-top: 0px;
+        align-self: center;
+    }
+
+    .headerItemMain{
+        text-align: center;
+        padding-left: 0;
+        flex: 0;
+        align-items: center;
+    }
+
+    .headerItemMainLogo{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .headerItemSecondary{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerItemMainLogoImage{
+        width: 350px; 
+        height: 100px; 
+        margin-top: 0px;
+        align-self: center;
+        padding-left: 0px;
+    }
+
+    .headerItemMain{
+        text-align: center;
+        padding-left: 0;
+        flex: 0;
+        align-items: center;
+        margin: 50px auto 0px auto;
+    }
+
+    .headerItemMainLogo{
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .headerItemSecondary{
+        margin: 0px;
+    }
+
+    .headerItem{
+        display:flex;
+        flex: 1;
+        border: 2px;
+        flex-wrap: 0;
+        flex-direction: column;
+    }
+
+    .custom-shape-divider-bottom-1636603867 svg {
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+}
