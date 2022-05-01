@@ -14,7 +14,7 @@ p, h1, h2, h3, h4{
 }
 
 .sectionHeading{
-    margin: 100px;
+    margin: 50px;
     flex-direction: none;
     text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
 }
@@ -189,7 +189,7 @@ p, h1, h2, h3, h4{
 
 .mainContent{
     display:flex;
-    padding: 60px;
+    padding: 40px;
     text-align: center;
     background-color: #424242;
     color: white;
@@ -205,7 +205,8 @@ p, h1, h2, h3, h4{
 .mainContentOne{
     display: flex;
     background-color: #3b3b3b;
-    padding: 50px;
+    padding: 40px;
+    margin: 10px;
     z-index: 10;
     border-radius: 25px;
     box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
@@ -222,7 +223,7 @@ p, h1, h2, h3, h4{
 .mainContentTwo{
     display: flex;
     background-color: #3b3b3b;
-    padding: 50px;
+    padding: 40px;
     border-radius: 25px;
     box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
     -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
@@ -235,24 +236,47 @@ p, h1, h2, h3, h4{
   /* Similar syntax to box-shadow */
 }
 
+.column {
+    columns: 4 200px; 
+    column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    margin: 10px;
+    display: block;
+}
+
+.row {
+    max-width: 1400px;
+    margin: auto;
+    display: block;
+}   
+
+.card:first-child {
+    column-span: all;
+    display:block;
+    margin-bottom: 1rem;
+}
+
+.column ~ .card:last-child {
+    margin-bottom: 0;
+}
+
 .card {
-  margin: 10px;
+  margin: 20px 22px 12px 0px;
   background-color: #3b3b3b;
-  border-radius: 15px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.61);
-  /* width: 280px; */
-}
-.card-header img {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
+  break-inside: avoid;
+  break-after: avoid;
+  break-before: avoid;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  page-break-before: avoid;
 }
+
 .card-body {
-  display: block;
-  flex-direction: column;
   text-align: left;
-  align-items: flex-start;
   padding: 0px 10px 0px 10px;
   min-height: 100px;
 }
@@ -266,7 +290,6 @@ p, h1, h2, h3, h4{
   padding: 2px 10px;
   text-transform: uppercase;
   background-color: #ff9900;
-
 }
 
 .card-body p {
@@ -302,7 +325,7 @@ img.hover-effect {
   opacity: 40%;
 }
 
-/* max-width: 1334px */
+/* max-width: 1400px */
 @media screen and (max-width: 1400px) {
     .headerItemMainLogoImage{
         width: 350px; 
