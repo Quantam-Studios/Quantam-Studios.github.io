@@ -1,45 +1,60 @@
 html{
     height: 100%;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #424242;
     margin: 0;
     height: 100%;
+    background-color: #222222; 
 }
 
 p, h1, h2, h3, h4{
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     color: #fff;
 }
 
 .sectionHeading{
-    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
     flex-direction: none;
     text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+    font-style: bold;
 }
 
 .sectionHeadingBar{
+    background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+    background-size: 100% 6px;
     box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
     -webkit-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    margin: 25vw;
+    margin-top: 0px;
+    margin-bottom: 30px; 
+    padding: 3px;
+    border-radius: 50px;
 }
 
 /* Top Navigation Bar Styling */
-.navList{
-    z-index: 999;
+.navList-sticky{
+    z-index: 998;
     width: 100%;
     position: fixed;
-    background-color: #333;
-    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    background-color: #353535;
     margin: 0;
     padding: 1rem 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
 }
+
 .navItem{
     list-style: none;
     margin-right: 2rem;
@@ -51,19 +66,41 @@ p, h1, h2, h3, h4{
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
     transition: all 200ms ease-in;
-    padding: 0.5rem;
-    background-color: #333;
+    padding:0.5rem 1rem;
+    background-color: #353535;
     border-radius: 50px;
-}
+    background-image: none;
+}       
+
 
 .navItem a:hover{
     color: #ff9900;
-    background-color: #222222;
+    background-image: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+/* gradient text for modern browsers */
+@supports (background-clip: text) {
+    .navItem a:hover {
+      background-image: linear-gradient(60deg, #E21143, #FFB03A);
+      background-clip: text;
+      color: transparent;
+    }
 }
 
 .navItem:first-child{
     margin-right: auto;
     margin-left: 1rem;
+}
+
+.navItem:first-child a:hover{
+    background-image: none;
+    background-clip: none;
 }
 
 .aButton{
@@ -73,7 +110,7 @@ p, h1, h2, h3, h4{
 .buttonMain{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
-    background: #ff9900;
+    background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
     border: none;
     outline: none;
     padding:0.5rem 1rem;
@@ -102,7 +139,6 @@ p, h1, h2, h3, h4{
 .buttonGit{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
-    background: rgb(27, 27, 27);
     border: none;
     outline: none;
     padding:0.5rem 1rem;
@@ -110,6 +146,7 @@ p, h1, h2, h3, h4{
     cursor: pointer;
     transition: all 200ms ease-in;
     color:#3b3b3b;
+    background: linear-gradient(45deg, rgb(15, 15, 15) 0%, rgb(30, 30, 30) 100%);
 }
 
 .buttonGit:hover{
@@ -119,12 +156,12 @@ p, h1, h2, h3, h4{
 .header{
     display:flex;
     max-height: 85%;
-    min-height: 60%;
+    min-height: 200px;
     padding: 60px;
+    padding-bottom: 0px;
     text-align: center;
-    background-color: #222222;
+    background-color: #121212;
     color: white;
-
     flex-wrap: wrap;
 }
 
@@ -190,44 +227,107 @@ p, h1, h2, h3, h4{
 .mainContent{
     display:flex;
     padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-align: center;
-    background-color: #424242;
+    background-color: #222222;
     color: white;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     z-index: 10;
-    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
 }
 
-.mainContentOne{
-    display: flex;
-    background-color: #3b3b3b;
-    padding: 40px;
-    margin: 10px;
-    z-index: 10;
+/* style the container */
+.mainContentOne {
+    position: relative;
     border-radius: 25px;
-    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
+    background-color: #222222;
+    padding: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
+} 
+  
+/* Two-column layout */
+.col {
+    float: left;
+    width: 50%;
+    padding: 0 50px;
+    margin: none;
+    margin-top: 6px;
 }
 
-.mainContentOneInside{
-    display: flex;
-    z-index: 10;
-    border-radius: 25px;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+.skill_logo{
+    color: white; 
+    height: 50px; 
+    margin: 4px;
+}
+
+ /* loop animation stuff, base code for the loop class and animation was written by: Aliaksei Peterson */
+.loop {
+	background-color: var(--main-color);
+	overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+	z-index: 100000;
+}
+
+.loop__element {
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*1.3);
+}
+
+.loop__element:nth-child(1) {
+  animation: preloader 1.0s ease-in-out alternate infinite;
+}
+.loop__element:nth-child(2) {
+  animation: preloader 1.0s ease-in-out alternate 0.2s infinite;
+}
+.loop__element:nth-child(3) {
+  animation: preloader 1.0s ease-in-out alternate 0.4s infinite;
+}
+.loop__element:nth-child(4) {
+    animation: preloader 1.0s ease-in-out alternate 0.6s infinite;
+}
+.loop__element:nth-child(5) {
+    animation: preloader 1.0s ease-in-out alternate 0.8s infinite;
+} 
+.loop__element:nth-child(6) {
+    animation: preloader 1.0s ease-in-out alternate 1.0s infinite;
+}
+.loop__element:nth-child(7) {
+    animation: preloader 1.0s ease-in-out alternate 1.2s infinite;
+}
+
+@keyframes preloader {
+  100% { 
+      transform: scale(1.3); 
+      filter: brightness(115%);
+    }
+}
+
 
 .mainContentTwo{
     display: flex;
-    background-color: #3b3b3b;
+    background-color: #353535;
     padding: 40px;
-    border-radius: 25px;
-    box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 1px 75px 3px rgba(0,0,0,0.61);
 }   
 
 .shadow {
@@ -248,37 +348,33 @@ p, h1, h2, h3, h4{
     max-width: 1400px;
     margin: auto;
     display: block;
-}   
-
-.card:first-child {
-    column-span: all;
-    display:block;
-    margin-bottom: 1rem;
 }
 
 .column ~ .card:last-child {
     margin-bottom: 0;
 }
 
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
   margin: 20px 22px 12px 0px;
-  background-color: #3b3b3b;
+  background-color: #4e4e4e;
   width: 100%;
   height: auto;
   border-radius: 15px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
-  break-inside: avoid;
-  break-after: avoid;
-  break-before: avoid;
-  page-break-after: avoid;
-  page-break-inside: avoid;
-  page-break-before: avoid;
 }
 
 .card-body {
   text-align: left;
   padding: 0px 10px 0px 10px;
-  min-height: 100px;
+  min-height: 50px;
 }
 
 .tag {
@@ -290,6 +386,7 @@ p, h1, h2, h3, h4{
   padding: 2px 10px;
   text-transform: uppercase;
   background-color: #ff9900;
+  background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
 }
 
 .card-body p {
@@ -386,7 +483,49 @@ img.hover-effect {
     }
 
     .custom-shape-divider-bottom-1636603867 svg {
-    width: calc(100% + 1.3px);
-    height: 60px;
+        width: calc(100% + 1.3px);
+        height: 60px;
+    }
+    .col {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .mainContentOne {
+        padding: 5px;
+        padding-top: 0px;
+        margin: 10px;
+        margin-top: 0px;
+    }
+
+    .loop__element:nth-child(1) {
+        animation: none;
+    }
+    .loop__element:nth-child(2) {
+        animation: none;
+    }     
+    .loop__element:nth-child(3) {
+        animation: none;
+    }
+    .loop__element:nth-child(4) {
+        animation: none;
+    }
+    .loop__element:nth-child(5) {
+        animation: none;
+    } 
+    .loop__element:nth-child(6) {
+        animation: none;
+    }
+    .loop__element:nth-child(7) {
+        animation: none;
+    }
+    .loop__element:nth-child(8) {
+        animation: none;
+    }
+
+    .cards { grid-template-columns: repeat(2, 1fr); }
 }
+
+@media (max-width: 600px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
 }
