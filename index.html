@@ -15,7 +15,7 @@
           <!-- NavBar -->
           <!-- sticky NavBar-->
           <navbar>
-               <ul id="navbar-sticky" class="navList-sticky" stlye="display: none;">
+               <ul id="navbar-sticky" class="navList-sticky">
                     <li class="navItem">
                          <a href="#" style="font-size:20px;">
                               <b>
@@ -25,17 +25,59 @@
                     </li>
                     <li class="navItem">
                          <a href="#experience">
-                              <b>Experience</b>
+                              <b>
+                                   <i class="fa-solid fa-list"></i>
+                                   Experience
+                              </b>
                          </a>
                     </li>
                     <li class="navItem">
                          <a href="#projects">
-                              <b>Projects</b>
+                              <b>
+                                   <i class="fa-solid fa-code"></i>
+                                   Projects
+                              </b>
                          </a>
                     </li>
                     <li class="navItem">
                          <button class="buttonMain" onclick="window.location.href='#games'">
-                              <b>Games</b>
+                              <b>
+                                   <i class="fa-solid fa-gamepad"></i>
+                                   Games
+                              </b>
+                         </button>
+                    </li>
+               </ul>
+          </navbar>
+          <!-- Mobile Navigation -->
+          <navbar>
+               <ul id="navbar-sticky" class="navList-sticky-mobile">
+                    <li class="navItem">
+                         <a href="#" style="font-size:20px;">
+                              <b>
+                                   <img style="width:50%; height:80%;" src="QSlogowhite (1).png">
+                              </b>
+                         </a>
+                    </li>
+                    <li class="navItem">
+                         <a href="#experience">
+                              <b>
+                                   <i class="fa-solid fa-list"></i>
+                              </b>
+                         </a>
+                    </li>
+                    <li class="navItem">
+                         <a href="#projects">
+                              <b>
+                                   <i class="fa-solid fa-code"></i>
+                              </b>
+                         </a>
+                    </li>
+                    <li class="navItem">
+                         <button class="buttonMain" onclick="window.location.href='#games'">
+                              <b>
+                                   <i class="fa-solid fa-gamepad"></i>
+                              </b>
                          </button>
                     </li>
                </ul>
@@ -63,10 +105,10 @@
                               <b>Recent Projects</b>
                          </button>
                          <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
-                              <a href="https://github.com/Quantam-Studios">
+                              <a href="https://github.com/Quantam-Studios" style="text-decoration: none;">
                                    <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
                               </a>
-                              <a href="https://quantamstudios.itch.io/">
+                              <a href="https://quantamstudios.itch.io/" style="text-decoration: none;">
                                    <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
                               </a>
                          </div>
@@ -107,86 +149,184 @@
                     <h2 style="text-align: center" class="sectionHeading">Projects</h2>
                     <p class="sectionHeadingBar"></p>
                     <div class="cards">
-                         <div class="card" style="z-index: 10;">
-                              <div style="justify-content: left; text-align: left; padding: 10px;">
-                                   <h4>Natural Selection Simulator</h4>
-                                   <div>
-                                        <span class="tag">Simulator</span>
-                                        <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                        <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                   </div>
-                              </div>
-                              <div class="card-body">
-                                   <p>This software was made for people who want to see the effects that predators have on which traits are expressed in prey as well as to see which reproductive types prove to be advantageous in the presence of predators. It was originally created for the 2021-2022 IJAS science fair. At regionals it received "Outstanding Zoology Project" as well as gold. At state the project went on to receive gold.</p>
-                              </div>
-                              <div style="display: flex;">
-                                   <div style="margin: 10px; justify-content: left; text-align: left;">
-                                        <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
-                                             <b>GIT</b>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="card" style="z-index: 10;">
-                              <div style="justify-content: left; text-align: left; padding: 10px;">
-                                   <h4>CCHS Hub</h4>
-                                   <div>
-                                        <span class="tag">APP</span>
-                                        <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
-                                        <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
-                                   </div>
-                              </div>
-                              <div class="card-body">
-                                   <p>A student companion app to make students' day to day activites easier. It was created for the 2021-2022 FBLA southern-area conference where it got 1st place and the FBLA Illinois state conference where it recieved 2nd place. It will be going to the FBLA national leadership conference in the summer.</p>
-                              </div>
-                              <div style="display: flex;">
-                                   <div style="margin: 10px; justify-content: left; text-align: left;">
-                                        <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
-                                             <b>GIT</b>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="card" style="z-index: 10;">
-                              <div style="justify-content: left; text-align: left; padding: 10px;">
-                                   <h4>Python Cyphers</h4>
-                                   <div>
-                                        <span class="tag">RANDOM</span>
-                                        <img style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                                   </div>
-                              </div>
-                              <div class="card-body">
-                                   <p>A Collection of simple console based tools for various cyphers. I occasionally add to this when I get bored.</p>
-                              </div>
-                              <div style="display: flex;">
-                                   <div style="margin: 10px; justify-content: left; text-align: left;">
-                                        <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
-                                             <b>GIT</b>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="card" style="z-index: 10;">
-                              <div style="justify-content: left; text-align: left; padding: 10px;">
-                                   <h4>Collatz Conjecture</h4>
-                                   <div>
-                                        <span class="tag">RANDOM</span>
-                                        <img style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                                   </div>
-                              </div>
-                              <div class="card-body">
-                                   <p>A simple console based application for determing whether numbers abide by the collatz conjecture.</p>
-                              </div>
-                              <div style="display: flex;">
-                                   <div style="margin: 10px; justify-content: left; text-align: left;">
-                                        <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
-                                             <b>GIT</b>
-                                        </button>
-                                   </div>
-                              </div>
-                         </div>
+                         <table class="card" style="z-index: 10;">
+                              <tr>
+                                   <td valign="top">
+                                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                                             <h4>Natural Selection Simulator</h4>
+                                             <span class="tag">Simulator</span>
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                        </div>
+                                        <div class="card-body">
+                                             <p style="font-size: 15px;">
+                                                  This software was made for people who want to see the effects that predators have on which traits are expressed in prey as well as to see which reproductive types prove to be advantageous in the presence of predators. It was originally created for the 2021-2022 IJAS science fair. At regionals it received
+                                                  <span style="color: white;">"Outstanding Zoology Project" as well as gold</span>
+                                                  . At state the project went on to
+                                                  <span style="color: white;">receive gold.</span>
+                                             </p>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td valign="bottom">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                         <table class="card" style="z-index: 10;">
+                              <tr>
+                                   <td valign="top">
+                                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                                             <h4>CCHS Hub</h4>
+                                             <span class="tag">APP</span>
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
+                                        </div>
+                                        <div class="card-body">
+                                             <p style="font-size: 15px;">
+                                                  A student companion app to make students' day to day activites easier. It was created for the 2021-2022 FBLA southern-area conference where it got
+                                                  <span style="color: white;">1st place</span>
+                                                  and the FBLA Illinois
+                                                  <span style="color: white;">state conference where it recieved 2nd place</span>
+                                                  . It will be going to the FBLA national leadership conference in the summer.
+                                             </p>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td valign="bottom">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/CCHS-Hub-Rework-of-fbla-app-2021-2022'" class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                         <table class="card" style="z-index: 10;">
+                              <tr>
+                                   <td valign="top">
+                                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                                             <h4>Python Cyphers</h4>
+                                             <span class="tag">RANDOM</span>
+                                             <img style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
+                                        </div>
+                                        <div class="card-body">
+                                             <p style="padding-bottom: 10px; font-size: 15px;">A Collection of simple console based tools for various cyphers. I occasionally add to this when I get bored.</p>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td valign="bottom">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/PythonCyphers'" class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                         <table class="card" style="z-index: 10;">
+                              <tr>
+                                   <td valign="top">
+                                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                                             <h4>Collatz Conjecture</h4>
+                                             <span class="tag">RANDOM</span>
+                                             <img style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
+                                        </div>
+                                        <div class="card-body">
+                                             <p style="font-size: 15px;">
+                                                  A simple console based application for determing whether numbers abide by the collatz conjecture.
+                                             </p>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td valign="bottom">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Collatz-Conjecture'" class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                    </div>
+               </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190" id="games">
+               <path fill="#353535" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,74.7C640,75,800,117,960,133.3C1120,149,1280,139,1360,133.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+          </svg>
+          <div class="mainContentOne">
+               <div class="row">
+                    <h2 style="text-align: center" class="sectionHeading">Games</h2>
+                    <p class="sectionHeadingBar"></p>
+                    <div class="cards">
+                         <table class="card" style="z-index: 10;">
+                              <tr>
+                                   <td valign="top">
+                                        <div style="justify-content: left; text-align: left; padding: 10px;">
+                                             <h4>Natural Selection Simulator</h4>
+                                             <span class="tag">Simulator</span>
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                             <img style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                        </div>
+                                        <div class="card-body">
+                                             <p style="font-size: 15px;">
+                                                  This software was made for people who want to see the effects that predators have on which traits are expressed in prey as well as to see which reproductive types prove to be advantageous in the presence of predators. It was originally created for the 2021-2022 IJAS science fair. At regionals it received
+                                                  <span style="color: white;">"Outstanding Zoology Project" as well as gold</span>
+                                                  . At state the project went on to
+                                                  <span style="color: white;">receive gold.</span>
+                                             </p>
+                                        </div>
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td valign="bottom">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </td>
+                              </tr>
+                         </table>
+                    </div>
+               </div>
+          </div>
+          <div style="background-color: #353535;" id="personal">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+                    <path fill="#222222" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,64C480,53,600,43,720,64C840,85,960,139,1080,144C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+               </svg>
+          </div>
+          <div class="mainContentTwo">
+               <div class="row">
+                    <h2 style="text-align: center" class="sectionHeading">Personal</h2>
+                    <p class="sectionHeadingBar"></p>
+                    <div class="cards">
                     </div>
                </div>
           </div>
      </body>
+     <script src="https://kit.fontawesome.com/cc1c8b37f7.js" crossorigin="anonymous"></script>
 </html>

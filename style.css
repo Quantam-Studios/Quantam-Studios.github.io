@@ -16,6 +16,16 @@ p, h1, h2, h3, h4{
     color: #fff;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #ff9900;
+}
+  
+::selection {
+    color: white;
+    background: #ff9900;
+}
+
 .sectionHeading{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -48,6 +58,21 @@ p, h1, h2, h3, h4{
     margin: 0;
     padding: 1rem 0;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+}
+
+.navList-sticky-mobile{
+    z-index: 998;
+    width: 100%;
+    position: fixed;
+    background-color: #353535;
+    margin: 0;
+    padding: 1rem 0;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
@@ -328,6 +353,8 @@ p, h1, h2, h3, h4{
     display: flex;
     background-color: #353535;
     padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }   
 
 .shadow {
@@ -368,6 +395,7 @@ p, h1, h2, h3, h4{
   width: 100%;
   height: auto;
   border-radius: 15px;
+  position: relative;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
 }
 
@@ -524,6 +552,9 @@ img.hover-effect {
     }
 
     .cards { grid-template-columns: repeat(2, 1fr); }
+
+    .navList-sticky {display: none;}
+    .navList-sticky-mobile {display: flex;}
 }
 
 @media (max-width: 600px) {
