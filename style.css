@@ -1,56 +1,69 @@
-html{
+html {
     height: 100%;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     height: 100%;
-    background-color: #222222; 
+    background-color: #222222;
 }
 
-p, h1, h2, h3, h4{
+p,
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: white;
     background: #ff9900;
 }
-  
+
 ::selection {
     color: white;
     background: #ff9900;
 }
 
-.sectionHeading{
+.sectionHeading {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 50px;
     margin-right: 50px;
     flex-direction: none;
-    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.61);
     font-style: bold;
 }
 
-.sectionHeadingBar{
-    background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+.sectionHeadingBar {
+    background: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
     background-size: 100% 6px;
-    box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
-    -webkit-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
-    -moz-box-shadow: 0px 5px 15px 6px rgba(0,0,0,0.35);
+    box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
     margin: 25vw;
     margin-top: 0px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     padding: 3px;
     border-radius: 50px;
 }
 
+code {
+    background-color: none;
+    white-space: pre;
+    color: white;
+    font-size: 15px;
+}
+
 /* Top Navigation Bar Styling */
-.navList-sticky{
+.navList-sticky {
     z-index: 998;
     width: 100%;
     position: fixed;
@@ -60,12 +73,12 @@ p, h1, h2, h3, h4{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
 }
 
-.navList-sticky-mobile{
+.navList-sticky-mobile {
     z-index: 998;
     width: 100%;
     position: fixed;
@@ -75,32 +88,32 @@ p, h1, h2, h3, h4{
     display: none;
     justify-content: flex-end;
     align-items: center;
-    box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -webkit-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
-    -moz-box-shadow: -1px 1px 35px 0px rgba(0,0,0,0.47);
+    box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.47);
 }
 
-.navItem{
+.navItem {
     list-style: none;
     margin-right: 2rem;
     text-align: center;
 }
 
-.navItem a{
+.navItem a {
     text-decoration: none;
     color: white;
     font-family: 'Be Vietnam Pro', sans-serif;
     transition: all 200ms ease-in;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     background-color: #353535;
     border-radius: 50px;
     background-image: none;
-}       
+}
 
 
-.navItem a:hover{
+.navItem a:hover {
     color: #ff9900;
-    background-image: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+    background-image: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
@@ -112,74 +125,94 @@ p, h1, h2, h3, h4{
 /* gradient text for modern browsers */
 @supports (background-clip: text) {
     .navItem a:hover {
-      background-image: linear-gradient(60deg, #E21143, #FFB03A);
-      background-clip: text;
-      color: transparent;
+        background-image: linear-gradient(60deg, #E21143, #FFB03A);
+        background-clip: text;
+        color: transparent;
     }
 }
 
-.navItem:first-child{
+.navItem:first-child {
     margin-right: auto;
     margin-left: 1rem;
 }
 
-.navItem:first-child a:hover{
+.navItem:first-child a:hover {
     background-image: none;
     background-clip: none;
 }
 
-.aButton{
+.aButton {
     background-color: #ff9900;
 }
 
-.buttonMain{
+.buttonMain {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
-    background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+    background: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
     border: none;
     outline: none;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 50px;
     cursor: pointer;
     transition: all 200ms ease-in;
-    color:#333;
+    color: #333;
 }
 
-.buttonMain:hover{
-    color:white;
+.buttonMain:hover {
+    color: white;
 }
 
-.buttonMainHeader{
-    box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
-    -webkit-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
-    -moz-box-shadow: 0px 1px 50px 3px rgba(0,0,0,0.61);
+.buttonMainHeader {
+    box-shadow: 0px 1px 50px 3px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 0px 1px 50px 3px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 1px 50px 3px rgba(0, 0, 0, 0.61);
 }
 
-.buttonMainHeader:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2); 
+.buttonMainHeader:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
 }
 
-.buttonGit{
+.buttonGit {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
     border: none;
     outline: none;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 50px;
     cursor: pointer;
     transition: all 200ms ease-in;
-    color:#3b3b3b;
+    color: #3b3b3b;
     background: linear-gradient(45deg, rgb(15, 15, 15) 0%, rgb(30, 30, 30) 100%);
 }
 
-.buttonGit:hover{
-    color:white;
+.buttonGit:hover {
+    color: white;
 }
 
-.header{
-    display:flex;
+.buttonGetTheme {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color: #3b3b3b;
+    background: rgb(188, 110, 197);
+    background: linear-gradient(45deg, rgba(188, 110, 197, 1) 0%, rgba(79, 151, 215, 1) 100%);
+}
+
+.buttonGetTheme:hover {
+    color: white;
+}
+
+.header {
+    display: flex;
     max-height: 85%;
     min-height: 200px;
     padding: 60px;
@@ -191,31 +224,31 @@ p, h1, h2, h3, h4{
 }
 
 
-.headerItem{
-    display:flex;
+.headerItem {
+    display: flex;
     flex: 1;
-    text-shadow: 0px 8px 10px rgba(0,0,0,0.61);
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.61);
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.headerItemImage{
+.headerItemImage {
     width: 100%;
     max-width: 800px;
     height: auto;
 
-    box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: -1px 1px 40px 0px rgba(0,0,0,0.5);
+    box-shadow: -1px 1px 40px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -1px 1px 40px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 1px 40px 0px rgba(0, 0, 0, 0.5);
 }
 
-.headerItemSecondary{
+.headerItemSecondary {
     align-content: center;
     word-wrap: break-word;
     margin: 50px;
 }
 
-.headerUnderLine{
+.headerUnderLine {
     text-decoration: none;
     background-image: linear-gradient(gray, gray);
     background-repeat: no-repeat;
@@ -223,9 +256,9 @@ p, h1, h2, h3, h4{
     background-size: 50% 7px;
 }
 
-.headerItemMain{
+.headerItemMain {
     text-align: left;
-    display:flex;
+    display: flex;
     flex: 1;
     flex-direction: row;
     display: inline-flex;
@@ -234,23 +267,23 @@ p, h1, h2, h3, h4{
 }
 
 
-.headerItemMainLogo{
+.headerItemMainLogo {
     flex: 1;
     flex-direction: row;
     display: inline-flex;
     margin-top: 50px;
 }
 
-.headerItemMainLogoImage{
-    width: 350px; 
-    height: 100px; 
+.headerItemMainLogoImage {
+    width: 350px;
+    height: 100px;
     margin-top: 25px;
 
     justify-content: right;
 }
 
-.mainContent{
-    display:flex;
+.mainContent {
+    display: flex;
     padding: 40px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -275,8 +308,8 @@ p, h1, h2, h3, h4{
     margin-left: 40px;
     margin-right: 40px;
     color: white;
-} 
-  
+}
+
 /* Two-column layout */
 .col {
     float: left;
@@ -293,78 +326,85 @@ p, h1, h2, h3, h4{
     clear: both;
 }
 
-.skill_logo{
-    color: white; 
-    height: 50px; 
+.skill_logo {
+    color: white;
+    height: 50px;
     margin: 4px;
 }
 
- /* loop animation stuff, base code for the loop class and animation was written by: Aliaksei Peterson */
+/* loop animation stuff, base code for the loop class and animation was written by: Aliaksei Peterson */
 .loop {
-	background-color: var(--main-color);
-	overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0; left: 0;
-  display: flex;
-  align-items: center;
-  align-content: center; 
-  justify-content: center;  
-	z-index: 100000;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    z-index: 100000;
 }
 
 .loop__element {
-  border: var(--size) solid var(--point-color);
-  margin: calc(var(--size)*1.3);
+    border: var(--size) solid var(--point-color);
+    margin: calc(var(--size)*1.3);
 }
 
 .loop__element:nth-child(1) {
-  animation: preloader 1.0s ease-in-out alternate infinite;
+    animation: preloader 1.0s ease-in-out alternate infinite;
 }
+
 .loop__element:nth-child(2) {
-  animation: preloader 1.0s ease-in-out alternate 0.2s infinite;
+    animation: preloader 1.0s ease-in-out alternate 0.2s infinite;
 }
+
 .loop__element:nth-child(3) {
-  animation: preloader 1.0s ease-in-out alternate 0.4s infinite;
+    animation: preloader 1.0s ease-in-out alternate 0.4s infinite;
 }
+
 .loop__element:nth-child(4) {
     animation: preloader 1.0s ease-in-out alternate 0.6s infinite;
 }
+
 .loop__element:nth-child(5) {
     animation: preloader 1.0s ease-in-out alternate 0.8s infinite;
-} 
+}
+
 .loop__element:nth-child(6) {
     animation: preloader 1.0s ease-in-out alternate 1.0s infinite;
 }
+
 .loop__element:nth-child(7) {
     animation: preloader 1.0s ease-in-out alternate 1.2s infinite;
 }
 
 @keyframes preloader {
-  100% { 
-      transform: scale(1.3); 
-      filter: brightness(115%);
+    100% {
+        transform: scale(1.3);
+        filter: brightness(115%);
     }
 }
 
 
-.mainContentTwo{
-    display: flex;
+.mainContentTwo {
+
     background-color: #353535;
     padding: 40px;
     padding-bottom: 0px;
     padding-top: 0px;
-}   
+}
 
 .shadow {
-  -webkit-filter: drop-shadow( 0px 5px 3px rgba(0,0,0,0.61));
-  filter: drop-shadow( 0px 0px 10px rgba(0,0,0,0.61));
-  /* Similar syntax to box-shadow */
+    -webkit-filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.61));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.61));
+    /* Similar syntax to box-shadow */
 }
 
 .column {
-    columns: 4 200px; 
+    columns: 4 200px;
     column-gap: 1rem;
     -moz-column-gap: 1rem;
     margin: 10px;
@@ -377,7 +417,7 @@ p, h1, h2, h3, h4{
     display: block;
 }
 
-.column ~ .card:last-child {
+.column~.card:last-child {
     margin-bottom: 0;
 }
 
@@ -390,37 +430,47 @@ p, h1, h2, h3, h4{
 }
 
 .card {
-  margin: 20px 22px 12px 0px;
-  background-color: #4e4e4e;
-  width: 100%;
-  height: auto;
-  border-radius: 15px;
-  position: relative;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
+    margin: 20px 22px 12px 0px;
+    background-color: #4e4e4e;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
 }
 
 .card-body {
-  text-align: left;
-  padding: 0px 10px 0px 10px;
-  min-height: 50px;
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+    min-height: 50px;
 }
 
 .tag {
-  background: #cccccc;
-  border-radius: 50px;
-  font-size: 12px;
-  margin: 0;
-  color: #fff;
-  padding: 2px 10px;
-  text-transform: uppercase;
-  background-color: #ff9900;
-  background: linear-gradient(45deg, rgba(255,120,90,1) 0%, rgba(255,184,0,1) 100%);
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    background-color: #ff9900;
+}
+
+.tagGameJam {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    background-color: #fa5c5b;
 }
 
 .card-body p {
-  font-size: 13px;
-  margin: 0px;
-  color: darkgray;
+    font-size: 13px;
+    margin: 0px;
+    color: darkgray;
 }
 
 .playButton {
@@ -428,64 +478,100 @@ p, h1, h2, h3, h4{
 }
 
 .glow {
-  color: #fff;
-  animation: glow 1s ease-in-out infinite alternate;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff9900, 0 0 20px #ff9900, 0 0 25px #ff9900, 0 0 30px #ffa51d, 0 0 35px #ff9900;
-  }
-  
-  to {
-    text-shadow: 0 0 10px #fff, 0 0 15px #ff7b00, 0 0 20px #ff7b00, 0 0 25px #ff9100, 0 0 30px #ff8818, 0 0 35px #ff7b00, 0 0 40px #ff891b;
-  }
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff9900, 0 0 20px #ff9900, 0 0 25px #ff9900, 0 0 30px #ffa51d, 0 0 35px #ff9900;
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px #ff7b00, 0 0 20px #ff7b00, 0 0 25px #ff9100, 0 0 30px #ff8818, 0 0 35px #ff7b00, 0 0 40px #ff891b;
+    }
 }
 
 img.hover-effect {
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 .hover-effect:hover {
-  opacity: 40%;
+    opacity: 40%;
+}
+
+.VSCodeMain {
+    justify-content: left;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 0px;
+    background-color: #121212;
+    color: white;
+}
+
+.buttonToTop {
+    border-radius: 100px;
+    background-image: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
+    transition: all 200ms ease-in;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.buttonToTop:hover{
+    color: white;
 }
 
 /* max-width: 1400px */
 @media screen and (max-width: 1400px) {
-    .headerItemMainLogoImage{
-        width: 350px; 
-        height: 100px; 
+    .headerItemMainLogoImage {
+        width: 350px;
+        height: 100px;
         margin-top: 0px;
         align-self: center;
     }
 
-    .headerItemMain{
+    .headerItemMain {
         text-align: center;
         padding-left: 0;
         flex: 0;
         align-items: center;
     }
 
-    .headerItemMainLogo{
-        align-items: center; 
+    .headerItemMainLogo {
+        align-items: center;
         justify-content: center;
     }
 
-    .headerItemSecondary{
+    .headerItemSecondary {
         margin: 0px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .headerItemMainLogoImage{
-        width: 350px; 
-        height: 100px; 
+    .VSCodeMain {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .headerItemMainLogoImage {
+        width: 350px;
+        height: 100px;
         margin-top: 0px;
         align-self: center;
         padding-left: 0px;
     }
 
-    .headerItemMain{
+    .headerItemMain {
         text-align: center;
         padding-left: 0;
         flex: 0;
@@ -493,17 +579,17 @@ img.hover-effect {
         margin: 50px auto 0px auto;
     }
 
-    .headerItemMainLogo{
-        align-items: center; 
+    .headerItemMainLogo {
+        align-items: center;
         justify-content: center;
     }
 
-    .headerItemSecondary{
+    .headerItemSecondary {
         margin: 0px;
     }
 
-    .headerItem{
-        display:flex;
+    .headerItem {
+        display: flex;
         flex: 1;
         border: 2px;
         flex-wrap: 0;
@@ -514,6 +600,7 @@ img.hover-effect {
         width: calc(100% + 1.3px);
         height: 60px;
     }
+
     .col {
         width: 100%;
         margin-top: 0;
@@ -529,34 +616,50 @@ img.hover-effect {
     .loop__element:nth-child(1) {
         animation: none;
     }
+
     .loop__element:nth-child(2) {
         animation: none;
-    }     
+    }
+
     .loop__element:nth-child(3) {
         animation: none;
     }
+
     .loop__element:nth-child(4) {
         animation: none;
     }
+
     .loop__element:nth-child(5) {
         animation: none;
-    } 
+    }
+
     .loop__element:nth-child(6) {
         animation: none;
     }
+
     .loop__element:nth-child(7) {
         animation: none;
     }
+
     .loop__element:nth-child(8) {
         animation: none;
     }
 
-    .cards { grid-template-columns: repeat(2, 1fr); }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-    .navList-sticky {display: none;}
-    .navList-sticky-mobile {display: flex;}
+    .navList-sticky {
+        display: none;
+    }
+
+    .navList-sticky-mobile {
+        display: flex;
+    }
 }
 
 @media (max-width: 600px) {
-    .cards { grid-template-columns: repeat(1, 1fr); }
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
