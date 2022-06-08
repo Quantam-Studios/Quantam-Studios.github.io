@@ -505,6 +505,12 @@ img.hover-effect {
     text-align: left;
 }
 
+.themeDemo {
+    background-color: #292b2e;
+    border: 2px solid #5d4d7a;
+    border-radius: 0px 15px 15px 0px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -527,7 +533,7 @@ footer {
     cursor: pointer;
 }
 
-.buttonToTop:hover{
+.buttonToTop:hover {
     color: white;
 }
 
@@ -661,5 +667,8 @@ footer {
 @media (max-width: 600px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .themeDemo {
+        border-radius: 0px 0px 15px 15px;
     }
 }
