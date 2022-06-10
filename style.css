@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    width: 100%;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -14,23 +15,23 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(135, 135, 135); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(135, 135, 135);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(100, 99, 99); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 99, 99);
+}
 
 p,
 h1,
@@ -232,6 +233,12 @@ code {
     color: white;
 }
 
+.buttonGetThemeHolder {
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
 .header {
     display: flex;
     max-height: 85%;
@@ -340,6 +347,12 @@ code {
     margin-top: 6px;
 }
 
+.experienceP {
+    margin: none; 
+    text-align: left; 
+    font-size: 16px;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -411,6 +424,7 @@ code {
 
 .decorSVG {
     display: block;
+    overflow: hidden;
 }
 
 .mainContentTwo {
@@ -445,7 +459,7 @@ code {
 }
 
 .cards {
-    max-width: 1200px;
+    max-width: 1380px;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
@@ -466,6 +480,10 @@ code {
     text-align: left;
     padding: 0px 10px 0px 10px;
     min-height: 50px;
+}
+
+.P {
+    font-size: 200px;
 }
 
 .tag {
@@ -601,6 +619,17 @@ footer {
     color: white;
 }
 
+.buttonMobileHolder {
+    margin: 10px;
+}
+
+/* prevents decor SVGs from displaying on too large of displays because absolute positioning is thrown off.*/
+@media screen and (min-width: 1921px) {
+    .decorSVG {
+        display: none;
+    }
+}
+
 /* max-width: 1400px */
 @media screen and (max-width: 1400px) {
     .headerItemMainLogoImage {
@@ -631,6 +660,11 @@ footer {
     .VSCodeMain {
         justify-content: center;
         text-align: center;
+    }
+
+    .buttonGetThemeHolder {
+        margin: 0px;
+        margin-top: 10px;
     }
 
     .decorSVG {
@@ -743,15 +777,19 @@ footer {
     .cards {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .themeDemo {
         border-radius: 0px 0px 15px 15px;
     }
+
     .VSCodeSection {
         display: block;
     }
+
     .buttonToTop {
         display: none;
     }
+
     .buttonWebGit {
         display: none;
     }
@@ -759,9 +797,68 @@ footer {
     .buttonWebGit-Mobile {
         display: block;
     }
-    
+
     .buttonToTop-Mobile {
         text-align: right;
         display: block;
+    }
+}
+
+@media (max-width: 599px) {
+    .header {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 90px;
+    }
+
+    .headerItem {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .col {
+        padding: 0px;
+    }
+
+    .experienceP {
+        font-size: 12px;
+    }
+
+    .sectionHeading {
+        font-size: 20px;
+    }
+
+    p.card-body {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headerItemMainLogoImage {
+        width: auto;
+        height: auto;
+    }
+
+    .buttonMobileHolder {
+        margin: 0px;
+    }
+
+    .mainContentOne {
+        padding: 0px;
+        margin: 5px;
+    }
+
+    .mainContentTwo {
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .mainContent {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .sectionHeading {
+        margin: 0px;
     }
 }
