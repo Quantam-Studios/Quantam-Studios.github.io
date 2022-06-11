@@ -70,7 +70,7 @@ h4 {
     box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 5px 15px 6px rgba(0, 0, 0, 0.35);
-    margin: 25vw;
+    margin: 40%;
     margin-top: 0px;
     margin-bottom: 30px;
     padding: 3px;
@@ -294,6 +294,9 @@ code {
     margin: 100px auto 0px auto;
 }
 
+.tagLine {
+    font-size: 25px;
+}
 
 .headerItemMainLogo {
     flex: 1;
@@ -679,6 +682,10 @@ footer {
         padding-left: 0px;
     }
 
+    .tagLine {
+        font-size: 15px;
+    }
+
     .headerItemMain {
         text-align: center;
         padding-left: 0;
@@ -802,6 +809,11 @@ footer {
         text-align: right;
         display: block;
     }
+
+    .headerItemMainLogoImage {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media (max-width: 599px) {
@@ -834,11 +846,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-    .headerItemMainLogoImage {
-        width: auto;
-        height: auto;
-    }
-
     .buttonMobileHolder {
         margin: 0px;
     }
