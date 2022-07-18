@@ -1,4 +1,5 @@
 {
     "html-fmt-vscode.indentSize": 5,
-    "html-fmt-vscode.multilineAttributeThreshold": 5
+    "html-fmt-vscode.multilineAttributeThreshold": 5,
+    "liveServer.settings.port": 5501
 }
