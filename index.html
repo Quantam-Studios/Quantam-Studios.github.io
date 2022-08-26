@@ -1,496 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-     <head>
-          <title>QS Home</title>
-          <meta name="viewport" content="width=device-width, initial-scale e=1">
-          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <link rel="stylesheet" type="text/css" href="style.css">
 
-          <meta name="description" content="Quantam Studios. Games, Websites, Simulations, and more...">
-     </head>
-     <body>
-          <!-- NavBar -->
-          <!-- sticky NavBar-->
-          <navbar>
-               <ul id="navbar-sticky" class="navList-sticky">
-                    <li class="navItem">
-                         <a href="#" style="font-size:20px;">
+<head>
+     <title>QS Home</title>
+     <meta name="viewport" content="width=device-width, initial-scale e=1">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <!--  Essential META Tags -->
+     <meta name="description" content="Quantam Studios. Games, Websites, Simulations, and more...">
+     <meta name="keywords" content="Games, Quantam Studios, Zach, Zach Goodson, Goodson, Quantam, Coding">
+     <!--  Embed META Tags -->
+     <meta property="og:title" content="Quantam Studios">
+     <meta property="og:image" content="https://quantamstudios.dev/QSlogowhite%20(1).png">
+     <meta property="og:url" content="https://quantamstudios.dev">
+</head>
+
+<body>
+     <!-- NavBar -->
+     <!-- sticky NavBar-->
+     <navbar>
+          <ul id="navbar-sticky" class="navList-sticky">
+               <li class="navItem">
+                    <a href="#" style="font-size:20px;">
+                         <b>
+                              <img style="width:50%; height:80%;" alt="Home" src="QSlogowhite (1).png">
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <a aria-label="Experience" href="#experience">
+                         <b>
+                              <i class="fa-solid fa-list"></i>
+                              Experience
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <a aria-label="Projects" href="#projects">
+                         <b>
+                              <i class="fa-solid fa-code"></i>
+                              Projects
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <button class="buttonMain" aria-label="Games" onclick="window.location.href='#games'">
+                         <b>
+                              <i class="fa-solid fa-gamepad"></i>
+                              Games
+                         </b>
+                    </button>
+               </li>
+          </ul>
+     </navbar>
+     <!-- Mobile Navigation -->
+     <navbar>
+          <ul id="navbar-sticky" class="navList-sticky-mobile">
+               <li class="navItem">
+                    <a href="#" style="font-size:20px;">
+                         <b>
+                              <img style="width:50%; height:80%;" alt="Home" src="QSlogowhite (1).png">
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <a aria-label="experience" href="#experience">
+                         <b>
+                              <i class="fa-solid fa-list"></i>
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <a aria-label="Projects" href="#projects">
+                         <b>
+                              <i class="fa-solid fa-code"></i>
+                         </b>
+                    </a>
+               </li>
+               <li class="navItem">
+                    <button class="buttonMain" aria-label="Games" onclick="window.location.href='#games'">
+                         <b>
+                              <i class="fa-solid fa-gamepad"></i>
+                         </b>
+                    </button>
+               </li>
+          </ul>
+     </navbar>
+     <!-- Header -->
+     <div class="header">
+          <div class="headerItem">
+               <div style="justify-content: center;" class="headerItem headerItemMain">
+                    <div>
+                         <h1 class="w3-animate-left" style="font-size: 3rem;">
                               <b>
-                                   <img style="width:50%; height:80%;" alt="Home" src="QSlogowhite (1).png">
+                                   <span class="glow">Quantam</span>
+                                   <br>
+                                   Studios
                               </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <a aria-label="Experience" href="#experience">
-                              <b>
-                                   <i class="fa-solid fa-list"></i>
-                                   Experience
-                              </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <a aria-label="Projects" href="#projects">
-                              <b>
-                                   <i class="fa-solid fa-code"></i>
-                                   Projects
-                              </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <button class="buttonMain" aria-label="Games" onclick="window.location.href='#games'">
-                              <b>
-                                   <i class="fa-solid fa-gamepad"></i>
-                                   Games
-                              </b>
-                         </button>
-                    </li>
-               </ul>
-          </navbar>
-          <!-- Mobile Navigation -->
-          <navbar>
-               <ul id="navbar-sticky" class="navList-sticky-mobile">
-                    <li class="navItem">
-                         <a href="#" style="font-size:20px;">
-                              <b>
-                                   <img style="width:50%; height:80%;" alt="Home" src="QSlogowhite (1).png">
-                              </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <a aria-label="experience" href="#experience">
-                              <b>
-                                   <i class="fa-solid fa-list"></i>
-                              </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <a aria-label="Projects" href="#projects">
-                              <b>
-                                   <i class="fa-solid fa-code"></i>
-                              </b>
-                         </a>
-                    </li>
-                    <li class="navItem">
-                         <button class="buttonMain" aria-label="Games" onclick="window.location.href='#games'">
-                              <b>
-                                   <i class="fa-solid fa-gamepad"></i>
-                              </b>
-                         </button>
-                    </li>
-               </ul>
-          </navbar>
-          <!-- Header -->
-          <div class="header">
-               <div class="headerItem">
-                    <div style="justify-content: center;" class="headerItem headerItemMain">
-                         <div>
-                              <h1 class="w3-animate-left" style="font-size: 3rem;">
-                                   <b>
-                                        <span class="glow">Quantam</span>
-                                        <br>
-                                        Studios
-                                   </b>
-                              </h1>
-                         </div>
-                         <div>
-                              <img class="headerItemMainLogoImage w3-animate-right" alt="Quantam-Studios Logo" src="QSlogowhite (1).png">
-                         </div>
+                         </h1>
                     </div>
-                    <div class="headerItem" style="justify-content: center;">
-                         <p class="w3-animate-opacity tagLine" style="font-family: consolas;">Games, Websites, Simulations, and more...</p>
-                         <button onclick="window.location.href='#projects'" class="buttonMain w3-animate-bottom buttonMainHeader" style="width: 10rem; margin: 0 auto;">
-                              <b>Recent Projects</b>
-                         </button>
-                         <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
-                              <a aria-label="Github" href="https://github.com/Quantam-Studios" style="text-decoration: none;">
-                                   <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
-                              </a>
-                              <a aria-label="Itch.io" href="https://quantamstudios.itch.io/" style="text-decoration: none;">
-                                   <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
-                              </a>
-                              <a aria-label="Code pen" href="https://codepen.io/quantam-studios" style="text-decoration: none;">
-                                   <i style="color:white;" class="fa-brands fa-codepen w3-hover-opacity"></i>
-                              </a>
-                         </div>
+                    <div>
+                         <img class="headerItemMainLogoImage w3-animate-right" alt="Quantam-Studios Logo"
+                              src="QSlogowhite (1).png">
+                    </div>
+               </div>
+               <div class="headerItem" style="justify-content: center;">
+                    <p class="w3-animate-opacity tagLine" style="font-family: consolas;">Games, Websites, Simulations,
+                         and more...</p>
+                    <button onclick="window.location.href='#projects'"
+                         class="buttonMain w3-animate-bottom buttonMainHeader" style="width: 10rem; margin: 0 auto;">
+                         <b>Recent Projects</b>
+                    </button>
+                    <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
+                         <a aria-label="Github" href="https://github.com/Quantam-Studios"
+                              style="text-decoration: none;">
+                              <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
+                         </a>
+                         <a aria-label="Itch.io" href="https://quantamstudios.itch.io/" style="text-decoration: none;">
+                              <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
+                         </a>
+                         <a aria-label="Code pen" href="https://codepen.io/quantam-studios"
+                              style="text-decoration: none;">
+                              <i style="color:white;" class="fa-brands fa-codepen w3-hover-opacity"></i>
+                         </a>
                     </div>
                </div>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190" id="experience">
-               <path fill="#121212" fill-opacity="1" d="M0,0L48,5.3C96,11,192,21,288,53.3C384,85,480,139,576,144C672,149,768,107,864,101.3C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-          </svg>
-          <div class="mainContent">
-               <!-- experience -->
-               <div class="mainContentOne">
-                    <div class="row">
-                         <h2 style="text-align: center" class="sectionHeading">Experience</h2>
-                         <p class="sectionHeadingBar"></p>
-                         <div class="col" style="justify-content: left;">
-                              <p class="experienceP">I have used many different frameworks for a wide variety of projects ranging from apps to games. The languages, and frameworks I use the most are: C#, Unity, Dart, Flutter, CSS, HTML, and Python.</p>
-                         </div>
-                         <div class="col" style="justify-content: center;">
-                              <img alt="c-sharp logo" class="hover-effect loop__element skill_logo" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                              <img alt="Unity logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                              <img alt="Dart logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
-                              <img alt="Flutter logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
-                              <img alt="CSS logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg">
-                              <img alt="HTML logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg">
-                              <img alt="Python logo" class="hover-effect loop__element skill_logo" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                         </div>
-                    </div>
-               </div>
-          </div>
-          <div style="background-color: #353535;" id="projects">
-               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
-                    <path fill="#222222" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,122.7C384,107,480,53,576,53.3C672,53,768,107,864,106.7C960,107,1056,53,1152,37.3C1248,21,1344,43,1392,53.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-               </svg>
-          </div>
-          <div class="mainContentTwo">
-               <!-- projects -->
-               <div class="row">
-                    <h2 style="text-align: center" class="sectionHeading">Projects</h2>
-                    <p class="sectionHeadingBar"></p>
-                    <div class="cards">
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Natural Selection Simulator</h4>
-                                             <span class="tag">Simulator</span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  This software was made for people who want to see the effects that predators have on which traits are expressed in prey as well as to see which reproductive types prove to be advantageous in the presence of predators. It was originally created for the 2021-2022 IJAS science fair. At regionals it received
-                                                  <span style="color: white;">"Outstanding Zoology Project" as well as gold</span>
-                                                  . At state the project went on to
-                                                  <span style="color: white;">receive gold.</span>
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>CCHS Hub</h4>
-                                             <span class="tag">APP</span>
-                                             <img alt="Dart logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
-                                             <img alt="Flutter logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  A student companion app to make students' day to day activites easier. It was created for the 2021-2022 FBLA southern-area conference where it got
-                                                  <span style="color: white;">1st place</span>
-                                                  and the FBLA Illinois
-                                                  <span style="color: white;">state conference where it recieved 2nd place</span>
-                                                  . It went on to the FBLA national leadership conference in the summer of 2022.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/CCHS-Hub-Rework-of-fbla-app-2021-2022'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Boids Demo</h4>
-                                             <span class="tag">Simulator</span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  This is a complex demo of a boid simulation system I created. It features a lot of customizability.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Boids'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Python Cyphers</h4>
-                                             <span class="tag">RANDOM</span>
-                                             <img alt="python logo" style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">A Collection of simple console based tools for various cyphers. I occasionally add to this when I get bored.</p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/PythonCyphers'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Collatz Conjecture</h4>
-                                             <span class="tag">RANDOM</span>
-                                             <img alt="Python logo" style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  A simple console based application for determining whether numbers abide by the collatz conjecture.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Collatz-Conjecture'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                    </div>
-               </div>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170" id="games">
-               <path fill="#353535" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,74.7C640,75,800,117,960,133.3C1120,149,1280,139,1360,133.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-          </svg>
+     </div>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 190" id="experience">
+          <path fill="#121212" fill-opacity="1"
+               d="M0,0L48,5.3C96,11,192,21,288,53.3C384,85,480,139,576,144C672,149,768,107,864,101.3C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+     </svg>
+     <div class="mainContent">
+          <!-- experience -->
           <div class="mainContentOne">
-              
-               <!-- games -->
                <div class="row">
-                    <h2 style="text-align: center" class="sectionHeading">Games</h2>
+                    <h2 style="text-align: center" class="sectionHeading">Experience</h2>
                     <p class="sectionHeadingBar"></p>
-                    <div class="cards">
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>TP Quest</h4>
-                                             <span class="tag">survival</span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  Try and stay entertained, fed, and more in this survival game!
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="display: flex;">
-                                             <div style="margin: 10px; text-align: left;">
-                                                  <button onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'" class="buttonGit">
-                                                       <b>
-                                                            <i class="fa-solid fa-code-fork"></i>
-                                                            GIT
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                             <div style="margin: 10px; text-align: right;">
-                                                  <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/tp-quest'">
-                                                       <b>
-                                                            <i class="fa-solid fa-gamepad"></i>
-                                                            PLAY
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Platformer Hell</h4>
-                                             <span class="tag">bullet hell</span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  Shoot and dash your way through enemies in a bullet hell turned platformer!
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="display: flex;">
-                                             <div style="margin: 10px; text-align: right;">
-                                                  <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/platformer-hell'">
-                                                       <b>
-                                                            <i class="fa-solid fa-gamepad"></i>
-                                                            PLAY
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Light Em Up!</h4>
-                                             <span class="tag">top-down shooter</span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  A fast paced top down shooter that was made to teach my siblings how to code.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="display: flex;">
-                                             <div style="margin: 10px; text-align: left;">
-                                                  <button onClick="window.location.href='https://github.com/Quantam-Studios/LIGHT-EM-UP'" class="buttonGit">
-                                                       <b>
-                                                            <i class="fa-solid fa-code-fork"></i>
-                                                            GIT
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                             <div style="margin: 10px; text-align: right;">
-                                                  <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/light-em-up'">
-                                                       <b>
-                                                            <i class="fa-solid fa-gamepad"></i>
-                                                            PLAY
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Master Mind</h4>
-                                             <span class="tag">guessing</span>
-                                             <img alt="Python logo" style="color: white; height: 30px; margin: 2x;" class="hover-effect" src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  A console-based Python game inspired by the board game Master Mind.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="display: flex;">
-                                             <div style="margin: 10px; text-align: left;">
-                                                  <button onClick="window.location.href='https://github.com/Quantam-Studios/Master-Mind'" class="buttonGit">
-                                                       <b>
-                                                            <i class="fa-solid fa-code-fork"></i>
-                                                            GIT
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                             <div style="margin: 10px; text-align: right;">
-                                                  <button class="buttonMain" onclick="window.location.href='https://replit.com/@ZacharyGoodson/MasterMind?v=1'">
-                                                       <b>
-                                                            <i class="fa-solid fa-gamepad"></i>
-                                                            PLAY
-                                                       </b>
-                                                  </button>
-                                             </div>
-                                        </div>
-                                   </td>
-                              </tr>
-                         </table>
-                         <table class="card" style="z-index: 10;">
-                              <tr>
-                                   <td valign="top">
-                                        <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                             <h4>Elemental Tanks</h4>
-                                             <span class="tag">top-down shooter</span>
-                                             <span class="tagGameJam"> game jam
-                                                  <i class="fa-solid fa-jar" style="color: white;"></i>
-                                             </span>
-                                             <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                             <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
-                                        </div>
-                                        <div class="card-body">
-                                             <p style="font-size: 15px;">
-                                                  Made in 48 hours for the GMTK 2021 gam Jam! A game of changing form to take on different types of tanks.
-                                             </p>
-                                        </div>
-                                   </td>
-                              </tr>
-                              <tr>
-                                   <td valign="bottom">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/elementaltanks'">
-                                                  <b>
-                                                       <i class="fa-solid fa-gamepad"></i>
-                                                       PLAY
-                                                  </b>
-                                             </button>
-                                        </div>
+                    <div class="col" style="justify-content: left;">
+                         <p class="experienceP">I have used many different frameworks for a wide variety of projects
+                              ranging from apps to games. The languages, and frameworks I use the most are: C#, Unity,
+                              Dart, Flutter, CSS, HTML, and Python.</p>
+                    </div>
+                    <div class="col" style="justify-content: center;">
+                         <img alt="c-sharp logo" class="hover-effect loop__element skill_logo"
+                              src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                         <img alt="Unity logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                         <img alt="Dart logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
+                         <img alt="Flutter logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
+                         <img alt="CSS logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg">
+                         <img alt="HTML logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg">
+                         <img alt="Python logo" class="hover-effect loop__element skill_logo"
+                              src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div style="background-color: #353535;" id="projects">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 140">
+               <path fill="#222222" fill-opacity="1"
+                    d="M0,96L48,106.7C96,117,192,139,288,122.7C384,107,480,53,576,53.3C672,53,768,107,864,106.7C960,107,1056,53,1152,37.3C1248,21,1344,43,1392,53.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+               </path>
+          </svg>
+     </div>
+     <div class="mainContentTwo">
+          <!-- projects -->
+          <div class="row">
+               <h2 style="text-align: center" class="sectionHeading">Projects</h2>
+               <p class="sectionHeadingBar"></p>
+               <div class="cards">
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Natural Selection Simulator</h4>
+                                        <span class="tag">Simulator</span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             This software was made for people who want to see the effects that
+                                             predators have on which traits are expressed in prey as well as to see
+                                             which reproductive types prove to be advantageous in the presence of
+                                             predators. It was originally created for the 2021-2022 IJAS science fair.
+                                             At regionals it received
+                                             <span style="color: white;">"Outstanding Zoology Project" as well as
+                                                  gold</span>
+                                             . At state the project went on to
+                                             <span style="color: white;">receive gold.</span>
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/Natural-Selection-Simulation--Science-Fair-21-22'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
                                    </div>
                               </td>
                          </tr>
@@ -498,41 +225,42 @@
                     <table class="card" style="z-index: 10;">
                          <tr>
                               <td valign="top">
-                                   <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                        <h4>Chromatic Doors</h4>
-                                        <span class="tag">puzzle</span>
-                                        <span class="tagGameJam"> game jam
-                                             <i class="fa-solid fa-jar" style="color: white;"></i>
-                                        </span>
-                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>CCHS Hub</h4>
+                                        <span class="tag">APP</span>
+                                        <img alt="Dart logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg">
+                                        <img alt="Flutter logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg">
                                    </div>
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
-                                             Made in 4 days for the 101 Game Jam, A game of opening and closing different colored doors!
+                                             A student companion app to make students' day to day activites easier. It
+                                             was created for the 2021-2022 FBLA southern-area conference where it got
+                                             <span style="color: white;">1st place</span>
+                                             and the FBLA Illinois
+                                             <span style="color: white;">state conference where it recieved 2nd
+                                                  place</span>
+                                             . It went on to the FBLA national leadership conference in the summer of
+                                             2022.
                                         </p>
                                    </div>
                               </td>
                          </tr>
                          <tr>
                               <td valign="bottom">
-                                   <div style="display: flex;">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/Chromatic-Doors'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                        <div style="margin: 10px; text-align: right;">
-                                             <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/chromatic-doors'">
-                                                  <b>
-                                                       <i class="fa-solid fa-gamepad"></i>
-                                                       PLAY
-                                                  </b>
-                                             </button>
-                                        </div>
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/CCHS-Hub-Rework-of-fbla-app-2021-2022'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
                                    </div>
                               </td>
                          </tr>
@@ -540,33 +268,35 @@
                     <table class="card" style="z-index: 10;">
                          <tr>
                               <td valign="top">
-                                   <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                        <h4>Platformer Hell Jam Edition</h4>
-                                        <span class="tag">bullet hell</span>
-                                        <span class="tagGameJam"> game jam
-                                             <i class="fa-solid fa-jar" style="color: white;"></i>
-                                        </span>
-                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Boids Demo</h4>
+                                        <span class="tag">Simulator</span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
                                    </div>
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
-                                            Made in 48 hours for the Score Space 12 game jam! A "bullet hell" game with platformer elements!
+                                             This is a complex demo of a boid simulation system I created. It features a
+                                             lot of customizability.
                                         </p>
                                    </div>
                               </td>
                          </tr>
                          <tr>
                               <td valign="bottom">
-                                   <div style="display: flex;">
-                                        <div style="margin: 10px; text-align: right;">
-                                             <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/platformer-hell-jam-edition'">
-                                                  <b>
-                                                       <i class="fa-solid fa-gamepad"></i>
-                                                       PLAY
-                                                  </b>
-                                             </button>
-                                        </div>
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/Boids'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
                                    </div>
                               </td>
                          </tr>
@@ -574,41 +304,31 @@
                     <table class="card" style="z-index: 10;">
                          <tr>
                               <td valign="top">
-                                   <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                        <h4>TP Quest Jam Edition</h4>
-                                        <span class="tag">survival</span>
-                                        <span class="tagGameJam"> game jam
-                                             <i class="fa-solid fa-jar" style="color: white;"></i>
-                                        </span>
-                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Python Cyphers</h4>
+                                        <span class="tag">RANDOM</span>
+                                        <img alt="python logo" style="color: white; height: 30px; margin: 2x;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
                                    </div>
                                    <div class="card-body">
-                                        <p style="font-size: 15px;">
-                                             Made in 48 hours for the Isolate Together game jam! A game where you are trapped in a house with infected people.
-                                        </p>
+                                        <p style="font-size: 15px;">A Collection of simple console based tools for
+                                             various cyphers. I occasionally add to this when I get bored.</p>
                                    </div>
                               </td>
                          </tr>
                          <tr>
                               <td valign="bottom">
-                                   <div style="display: flex;">
-                                        <div style="margin: 10px; text-align: left;">
-                                             <button onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'" class="buttonGit">
-                                                  <b>
-                                                       <i class="fa-solid fa-code-fork"></i>
-                                                       GIT
-                                                  </b>
-                                             </button>
-                                        </div>
-                                        <div style="margin: 10px; text-align: right;">
-                                             <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/tp-quest-jam-edition'">
-                                                  <b>
-                                                       <i class="fa-solid fa-gamepad"></i>
-                                                       PLAY
-                                                  </b>
-                                             </button>
-                                        </div>
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/PythonCyphers'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
                                    </div>
                               </td>
                          </tr>
@@ -616,33 +336,33 @@
                     <table class="card" style="z-index: 10;">
                          <tr>
                               <td valign="top">
-                                   <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
-                                        <h4>Can't Stop Flying!</h4>
-                                        <span class="tag">arcade</span>
-                                        <span class="tagGameJam"> game jam
-                                             <i class="fa-solid fa-jar" style="color: white;"></i>
-                                        </span>
-                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
-                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Collatz Conjecture</h4>
+                                        <span class="tag">RANDOM</span>
+                                        <img alt="Python logo" style="color: white; height: 30px; margin: 2x;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
                                    </div>
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
-                                             A game made in 72 hours for the Mini Jam #99. Fly clear of trees, and other birds in this endless-flyer!
+                                             A simple console based application for determining whether numbers abide by
+                                             the collatz conjecture.
                                         </p>
                                    </div>
                               </td>
                          </tr>
                          <tr>
                               <td valign="bottom">
-                                   <div style="display: flex;">
-                                        <div style="margin: 10px; text-align: right;">
-                                             <button class="buttonMain" onclick="window.location.href='https://quantamstudios.itch.io/cant-stop-flying'">
-                                                  <b>
-                                                       <i class="fa-solid fa-gamepad"></i>
-                                                       PLAY
-                                                  </b>
-                                             </button>
-                                        </div>
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/Collatz-Conjecture'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
                                    </div>
                               </td>
                          </tr>
@@ -650,33 +370,445 @@
                </div>
           </div>
      </div>
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170" id="games">
+          <path fill="#353535" fill-opacity="1"
+               d="M0,160L80,138.7C160,117,320,75,480,74.7C640,75,800,117,960,133.3C1120,149,1280,139,1360,133.3L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+          </path>
+     </svg>
+     <div class="mainContentOne">
+
+          <!-- games -->
+          <div class="row">
+               <h2 style="text-align: center" class="sectionHeading">Games</h2>
+               <p class="sectionHeadingBar"></p>
+               <div class="cards">
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>TP Quest</h4>
+                                        <span class="tag">survival</span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             Try and stay entertained, fed, and more in this survival game!
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="display: flex;">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button
+                                                  onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'"
+                                                  class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                        <div style="margin: 10px; text-align: right;">
+                                             <button class="buttonMain"
+                                                  onclick="window.location.href='https://quantamstudios.itch.io/tp-quest'">
+                                                  <b>
+                                                       <i class="fa-solid fa-gamepad"></i>
+                                                       PLAY
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                    </table>
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Platformer Hell</h4>
+                                        <span class="tag">bullet hell</span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             Shoot and dash your way through enemies in a bullet hell turned platformer!
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="display: flex;">
+                                        <div style="margin: 10px; text-align: right;">
+                                             <button class="buttonMain"
+                                                  onclick="window.location.href='https://quantamstudios.itch.io/platformer-hell'">
+                                                  <b>
+                                                       <i class="fa-solid fa-gamepad"></i>
+                                                       PLAY
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                    </table>
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Light Em Up!</h4>
+                                        <span class="tag">top-down shooter</span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             A fast paced top down shooter that was made to teach my siblings how to
+                                             code.
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="display: flex;">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button
+                                                  onClick="window.location.href='https://github.com/Quantam-Studios/LIGHT-EM-UP'"
+                                                  class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                        <div style="margin: 10px; text-align: right;">
+                                             <button class="buttonMain"
+                                                  onclick="window.location.href='https://quantamstudios.itch.io/light-em-up'">
+                                                  <b>
+                                                       <i class="fa-solid fa-gamepad"></i>
+                                                       PLAY
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                    </table>
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Master Mind</h4>
+                                        <span class="tag">guessing</span>
+                                        <img alt="Python logo" style="color: white; height: 30px; margin: 2x;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/python/python-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             A console-based Python game inspired by the board game Master Mind.
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="display: flex;">
+                                        <div style="margin: 10px; text-align: left;">
+                                             <button
+                                                  onClick="window.location.href='https://github.com/Quantam-Studios/Master-Mind'"
+                                                  class="buttonGit">
+                                                  <b>
+                                                       <i class="fa-solid fa-code-fork"></i>
+                                                       GIT
+                                                  </b>
+                                             </button>
+                                        </div>
+                                        <div style="margin: 10px; text-align: right;">
+                                             <button class="buttonMain"
+                                                  onclick="window.location.href='https://replit.com/@ZacharyGoodson/MasterMind?v=1'">
+                                                  <b>
+                                                       <i class="fa-solid fa-gamepad"></i>
+                                                       PLAY
+                                                  </b>
+                                             </button>
+                                        </div>
+                                   </div>
+                              </td>
+                         </tr>
+                    </table>
+                    <table class="card" style="z-index: 10;">
+                         <tr>
+                              <td valign="top">
+                                   <div
+                                        style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                        <h4>Elemental Tanks</h4>
+                                        <span class="tag">top-down shooter</span>
+                                        <span class="tagGameJam"> game jam
+                                             <i class="fa-solid fa-jar" style="color: white;"></i>
+                                        </span>
+                                        <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                        <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                             class="hover-effect"
+                                             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                                   </div>
+                                   <div class="card-body">
+                                        <p style="font-size: 15px;">
+                                             Made in 48 hours for the GMTK 2021 gam Jam! A game of changing form to take
+                                             on different types of tanks.
+                                        </p>
+                                   </div>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td valign="bottom">
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button class="buttonMain"
+                                             onclick="window.location.href='https://quantamstudios.itch.io/elementaltanks'">
+                                             <b>
+                                                  <i class="fa-solid fa-gamepad"></i>
+                                                  PLAY
+                                             </b>
+                                        </button>
+                                   </div>
+               </div>
+               </td>
+               </tr>
+               </table>
+               <table class="card" style="z-index: 10;">
+                    <tr>
+                         <td valign="top">
+                              <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                   <h4>Chromatic Doors</h4>
+                                   <span class="tag">puzzle</span>
+                                   <span class="tagGameJam"> game jam
+                                        <i class="fa-solid fa-jar" style="color: white;"></i>
+                                   </span>
+                                   <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                   <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect"
+                                        src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                              </div>
+                              <div class="card-body">
+                                   <p style="font-size: 15px;">
+                                        Made in 4 days for the 101 Game Jam, A game of opening and closing different
+                                        colored doors!
+                                   </p>
+                              </div>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign="bottom">
+                              <div style="display: flex;">
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/Chromatic-Doors'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
+                                   </div>
+                                   <div style="margin: 10px; text-align: right;">
+                                        <button class="buttonMain"
+                                             onclick="window.location.href='https://quantamstudios.itch.io/chromatic-doors'">
+                                             <b>
+                                                  <i class="fa-solid fa-gamepad"></i>
+                                                  PLAY
+                                             </b>
+                                        </button>
+                                   </div>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+               <table class="card" style="z-index: 10;">
+                    <tr>
+                         <td valign="top">
+                              <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                   <h4>Platformer Hell Jam Edition</h4>
+                                   <span class="tag">bullet hell</span>
+                                   <span class="tagGameJam"> game jam
+                                        <i class="fa-solid fa-jar" style="color: white;"></i>
+                                   </span>
+                                   <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                   <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect"
+                                        src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                              </div>
+                              <div class="card-body">
+                                   <p style="font-size: 15px;">
+                                        Made in 48 hours for the Score Space 12 game jam! A "bullet hell" game with
+                                        platformer elements!
+                                   </p>
+                              </div>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign="bottom">
+                              <div style="display: flex;">
+                                   <div style="margin: 10px; text-align: right;">
+                                        <button class="buttonMain"
+                                             onclick="window.location.href='https://quantamstudios.itch.io/platformer-hell-jam-edition'">
+                                             <b>
+                                                  <i class="fa-solid fa-gamepad"></i>
+                                                  PLAY
+                                             </b>
+                                        </button>
+                                   </div>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+               <table class="card" style="z-index: 10;">
+                    <tr>
+                         <td valign="top">
+                              <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                   <h4>TP Quest Jam Edition</h4>
+                                   <span class="tag">survival</span>
+                                   <span class="tagGameJam"> game jam
+                                        <i class="fa-solid fa-jar" style="color: white;"></i>
+                                   </span>
+                                   <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                   <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect"
+                                        src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                              </div>
+                              <div class="card-body">
+                                   <p style="font-size: 15px;">
+                                        Made in 48 hours for the Isolate Together game jam! A game where you are trapped
+                                        in a house with infected people.
+                                   </p>
+                              </div>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign="bottom">
+                              <div style="display: flex;">
+                                   <div style="margin: 10px; text-align: left;">
+                                        <button
+                                             onClick="window.location.href='https://github.com/Quantam-Studios/TP-Quest'"
+                                             class="buttonGit">
+                                             <b>
+                                                  <i class="fa-solid fa-code-fork"></i>
+                                                  GIT
+                                             </b>
+                                        </button>
+                                   </div>
+                                   <div style="margin: 10px; text-align: right;">
+                                        <button class="buttonMain"
+                                             onclick="window.location.href='https://quantamstudios.itch.io/tp-quest-jam-edition'">
+                                             <b>
+                                                  <i class="fa-solid fa-gamepad"></i>
+                                                  PLAY
+                                             </b>
+                                        </button>
+                                   </div>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+               <table class="card" style="z-index: 10;">
+                    <tr>
+                         <td valign="top">
+                              <div style="justify-content: left; text-align: left; padding: 10px; padding-top: 0px;">
+                                   <h4>Can't Stop Flying!</h4>
+                                   <span class="tag">arcade</span>
+                                   <span class="tagGameJam"> game jam
+                                        <i class="fa-solid fa-jar" style="color: white;"></i>
+                                   </span>
+                                   <img alt="c-sharp logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect" src="https://static.cdnlogo.com/logos/c/27/c.svg">
+                                   <img alt="Unity logo" style="color: white; height: 30px; margin: 2px;"
+                                        class="hover-effect"
+                                        src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg">
+                              </div>
+                              <div class="card-body">
+                                   <p style="font-size: 15px;">
+                                        A game made in 72 hours for the Mini Jam #99. Fly clear of trees, and other
+                                        birds in this endless-flyer!
+                                   </p>
+                              </div>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign="bottom">
+                              <div style="display: flex;">
+                                   <div style="margin: 10px; text-align: right;">
+                                        <button class="buttonMain"
+                                             onclick="window.location.href='https://quantamstudios.itch.io/cant-stop-flying'">
+                                             <b>
+                                                  <i class="fa-solid fa-gamepad"></i>
+                                                  PLAY
+                                             </b>
+                                        </button>
+                                   </div>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+          </div>
+     </div>
+     </div>
      <div class="mainContentOne">
           <!-- VS code theme -->
           <div class="row">
                <div style="justify-content: left; text-align: left; padding: 10px; padding-bottom: 20px;">
-                    <div class="w3-row VSCodeSection" style="background-color: #292b2e; border-radius: 15px;   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);">
-                         <div class="w3-container w3-half VSCodeMain" >
+                    <div class="w3-row VSCodeSection"
+                         style="background-color: #292b2e; border-radius: 15px;   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);">
+                         <div class="w3-container w3-half VSCodeMain">
                               <table style="margin-bottom: 10px;">
                                    <tr>
                                         <td valign="top">
                                              <div style="padding: 10px; padding-bottom: 0px;">
                                                   <h3>
                                                        My VS Code Theme
-                                                       <img alt="Visual Studio Code logo" style="color: white; height: 30px; margin: 2px;" class="hover-effect" src="https://upload.vectorlogo.zone/logos/visualstudio_code/images/a4381320-f83c-4a29-9db3-b241c1d096b1.svg">
+                                                       <img alt="Visual Studio Code logo"
+                                                            style="color: white; height: 30px; margin: 2px;"
+                                                            class="hover-effect"
+                                                            src="https://upload.vectorlogo.zone/logos/visualstudio_code/images/a4381320-f83c-4a29-9db3-b241c1d096b1.svg">
                                                   </h3>
                                              </div>
-                                             <p style="color: darkgray; padding: 10px; padding-top: 0px; padding-bottom: 0px; font-size: 15px;">
+                                             <p
+                                                  style="color: darkgray; padding: 10px; padding-top: 0px; padding-bottom: 0px; font-size: 15px;">
                                                   I use the
                                                   <span style="color: #bc6ec5;">Spacemacs</span>
                                                   theme,
-                                                  <span style="background-color: #222222; border-radius: 5px; color: white;">in dark mode of course!</span>
+                                                  <span
+                                                       style="background-color: #222222; border-radius: 5px; color: white;">in
+                                                       dark mode of course!</span>
                                              </p>
                                         </td>
                                    </tr>
                                    <tr>
                                         <td valign="bottom">
                                              <div class="buttonGetThemeHolder">
-                                                  <button onClick="window.location.href='https://marketplace.visualstudio.com/items?itemName=rkwan94.spacemacs'" class="buttonGetTheme">
+                                                  <button
+                                                       onClick="window.location.href='https://marketplace.visualstudio.com/items?itemName=rkwan94.spacemacs'"
+                                                       class="buttonGetTheme">
                                                        <b>
                                                             <i class="fa-solid fa-download"></i>
                                                             GET THEME
@@ -704,7 +836,9 @@
      </div>
      <div style="background-color: #121212;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-               <path fill="#222222" fill-opacity="1" d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+               <path fill="#222222" fill-opacity="1"
+                    d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+               </path>
           </svg>
      </div>
      <!-- footer -->
@@ -714,64 +848,112 @@
                     <div class="decorSVG" style="position: relative;">
                          <svg width="200" height="70" xmlns="http://www.w3.org/2000/svg">
                               <g>
-                                   <path id="svg_2" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" stroke-width="0" stroke="#000" fill="#4c4c4c"/>
+                                   <path id="svg_2"
+                                        d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                                        stroke-width="0" stroke="#000" fill="#4c4c4c" />
                                    <g transform="rotate(-6.79489 151.981 33.4416)" stroke="null" id="svg_70">
-                                    <rect stroke="#000" id="svg_49" height="8.63636" width="8.63636" y="20.55195" x="169.09091" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_50" height="8.63636" width="8.63636" y="29.12338" x="169.09091" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_51" height="8.63636" width="8.63636" y="29.12338" x="160.51948" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_52" height="8.63636" width="8.63636" y="37.69481" x="160.51948" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_53" height="8.63636" width="8.63636" y="37.69481" x="151.94805" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_54" height="8.63636" width="8.63636" y="29.12338" x="151.94805" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_55" height="8.63636" width="8.63636" y="29.12338" x="143.37662" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_56" height="8.63636" width="8.63636" y="37.69481" x="143.37662" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_57" height="8.63636" width="8.63636" y="11.98052" x="160.51948" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_58" height="8.63636" width="8.63636" y="11.98052" x="169.09091" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_59" height="8.63636" width="8.63636" y="46.26623" x="151.94805" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_60" height="8.63636" width="8.63636" y="46.26623" x="143.37662" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_61" height="8.63636" width="8.63636" y="20.55195" x="151.94805" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_62" height="8.63636" width="8.63636" y="11.98052" x="151.94805" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_63" height="8.63636" width="8.63636" y="37.69481" x="134.80519" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_64" height="8.63636" width="8.63636" y="46.26623" x="134.80519" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_65" height="8.63636" width="8.63636" y="29.12338" x="134.80519" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_66" height="8.63636" width="8.63636" y="37.69481" x="126.23377" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_67" height="8.63636" width="8.63636" y="29.12338" x="126.23377" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_68" height="8.63636" width="8.63636" y="29.12338" x="117.66234" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_69" height="8.63636" width="8.63636" y="20.55195" x="177.66234" stroke-width="0" fill="#e0e0e0"/>
+                                        <rect stroke="#000" id="svg_49" height="8.63636" width="8.63636" y="20.55195"
+                                             x="169.09091" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_50" height="8.63636" width="8.63636" y="29.12338"
+                                             x="169.09091" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_51" height="8.63636" width="8.63636" y="29.12338"
+                                             x="160.51948" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_52" height="8.63636" width="8.63636" y="37.69481"
+                                             x="160.51948" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_53" height="8.63636" width="8.63636" y="37.69481"
+                                             x="151.94805" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_54" height="8.63636" width="8.63636" y="29.12338"
+                                             x="151.94805" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_55" height="8.63636" width="8.63636" y="29.12338"
+                                             x="143.37662" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_56" height="8.63636" width="8.63636" y="37.69481"
+                                             x="143.37662" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_57" height="8.63636" width="8.63636" y="11.98052"
+                                             x="160.51948" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_58" height="8.63636" width="8.63636" y="11.98052"
+                                             x="169.09091" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_59" height="8.63636" width="8.63636" y="46.26623"
+                                             x="151.94805" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_60" height="8.63636" width="8.63636" y="46.26623"
+                                             x="143.37662" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_61" height="8.63636" width="8.63636" y="20.55195"
+                                             x="151.94805" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_62" height="8.63636" width="8.63636" y="11.98052"
+                                             x="151.94805" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_63" height="8.63636" width="8.63636" y="37.69481"
+                                             x="134.80519" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_64" height="8.63636" width="8.63636" y="46.26623"
+                                             x="134.80519" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_65" height="8.63636" width="8.63636" y="29.12338"
+                                             x="134.80519" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_66" height="8.63636" width="8.63636" y="37.69481"
+                                             x="126.23377" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_67" height="8.63636" width="8.63636" y="29.12338"
+                                             x="126.23377" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_68" height="8.63636" width="8.63636" y="29.12338"
+                                             x="117.66234" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_69" height="8.63636" width="8.63636" y="20.55195"
+                                             x="177.66234" stroke-width="0" fill="#e0e0e0" />
                                    </g>
                                    <g transform="rotate(-10.5874 54.0586 43.8312)" stroke="null" id="svg_92">
-                                    <rect stroke="#000" id="svg_71" height="8.63636" width="8.63636" y="30.94156" x="71.16883" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_72" height="8.63636" width="8.63636" y="39.51299" x="71.16883" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_73" height="8.63636" width="8.63636" y="39.51299" x="62.5974" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_74" height="8.63636" width="8.63636" y="48.08442" x="62.5974" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_75" height="8.63636" width="8.63636" y="48.08442" x="54.02597" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_76" height="8.63636" width="8.63636" y="39.51299" x="54.02597" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_77" height="8.63636" width="8.63636" y="39.51299" x="45.45454" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_78" height="8.63636" width="8.63636" y="48.08442" x="45.45454" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_79" height="8.63636" width="8.63636" y="22.37013" x="62.5974" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_80" height="8.63636" width="8.63636" y="22.37013" x="71.16883" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_81" height="8.63636" width="8.63636" y="56.65584" x="54.02597" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_82" height="8.63636" width="8.63636" y="56.65584" x="45.45454" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_83" height="8.63636" width="8.63636" y="30.94156" x="54.02597" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_84" height="8.63636" width="8.63636" y="22.37013" x="54.02597" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_85" height="8.63636" width="8.63636" y="48.08442" x="36.88312" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_86" height="8.63636" width="8.63636" y="56.65584" x="36.88312" stroke-width="0" fill="#494949"/>
-                                    <rect stroke="#000" id="svg_87" height="8.63636" width="8.63636" y="39.51299" x="36.88312" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_88" height="8.63636" width="8.63636" y="48.08442" x="28.31169" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_89" height="8.63636" width="8.63636" y="39.51299" x="28.31169" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_90" height="8.63636" width="8.63636" y="39.51299" x="19.74026" stroke-width="0" fill="#707070"/>
-                                    <rect stroke="#000" id="svg_91" height="8.63636" width="8.63636" y="30.94156" x="79.74026" stroke-width="0" fill="#e0e0e0"/>
+                                        <rect stroke="#000" id="svg_71" height="8.63636" width="8.63636" y="30.94156"
+                                             x="71.16883" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_72" height="8.63636" width="8.63636" y="39.51299"
+                                             x="71.16883" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_73" height="8.63636" width="8.63636" y="39.51299"
+                                             x="62.5974" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_74" height="8.63636" width="8.63636" y="48.08442"
+                                             x="62.5974" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_75" height="8.63636" width="8.63636" y="48.08442"
+                                             x="54.02597" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_76" height="8.63636" width="8.63636" y="39.51299"
+                                             x="54.02597" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_77" height="8.63636" width="8.63636" y="39.51299"
+                                             x="45.45454" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_78" height="8.63636" width="8.63636" y="48.08442"
+                                             x="45.45454" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_79" height="8.63636" width="8.63636" y="22.37013"
+                                             x="62.5974" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_80" height="8.63636" width="8.63636" y="22.37013"
+                                             x="71.16883" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_81" height="8.63636" width="8.63636" y="56.65584"
+                                             x="54.02597" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_82" height="8.63636" width="8.63636" y="56.65584"
+                                             x="45.45454" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_83" height="8.63636" width="8.63636" y="30.94156"
+                                             x="54.02597" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_84" height="8.63636" width="8.63636" y="22.37013"
+                                             x="54.02597" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_85" height="8.63636" width="8.63636" y="48.08442"
+                                             x="36.88312" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_86" height="8.63636" width="8.63636" y="56.65584"
+                                             x="36.88312" stroke-width="0" fill="#494949" />
+                                        <rect stroke="#000" id="svg_87" height="8.63636" width="8.63636" y="39.51299"
+                                             x="36.88312" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_88" height="8.63636" width="8.63636" y="48.08442"
+                                             x="28.31169" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_89" height="8.63636" width="8.63636" y="39.51299"
+                                             x="28.31169" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_90" height="8.63636" width="8.63636" y="39.51299"
+                                             x="19.74026" stroke-width="0" fill="#707070" />
+                                        <rect stroke="#000" id="svg_91" height="8.63636" width="8.63636" y="30.94156"
+                                             x="79.74026" stroke-width="0" fill="#e0e0e0" />
                                    </g>
-                                  </g>
+                              </g>
                          </svg>
                     </div>
                     <div class="buttonMobileHolder" style="text-align: left;">
-                         <button onClick="window.location.href='https://github.com/Quantam-Studios/Quantam-Studios.github.io'" class="buttonWebGit">
+                         <button
+                              onClick="window.location.href='https://github.com/Quantam-Studios/Quantam-Studios.github.io'"
+                              class="buttonWebGit">
                               <b>
                                    <i class="fa-solid fa-code-fork"></i>
                                    GIT
                               </b>
                          </button>
-                         <button aria-label="Git Repository of the site" onClick="window.location.href='https://github.com/Quantam-Studios/Quantam-Studios.github.io'" class="buttonWebGit-Mobile">
+                         <button aria-label="Git Repository of the site"
+                              onClick="window.location.href='https://github.com/Quantam-Studios/Quantam-Studios.github.io'"
+                              class="buttonWebGit-Mobile">
                               <b>
                                    <i class="fa-solid fa-code-fork"></i>
                               </b>
@@ -780,276 +962,455 @@
                </td>
                <td style="width: 33.33%;">
                     <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
-                         <a aria-label="Github" href="https://github.com/Quantam-Studios" style="text-decoration: none;">
+                         <a aria-label="Github" href="https://github.com/Quantam-Studios"
+                              style="text-decoration: none;">
                               <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
                          </a>
                          <a aria-label="Itch.io" href="https://quantamstudios.itch.io/" style="text-decoration: none;">
                               <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
                          </a>
-                         <a aria-label="Code pen" href="https://codepen.io/quantam-studios" style="text-decoration: none;">
+                         <a aria-label="Code pen" href="https://codepen.io/quantam-studios"
+                              style="text-decoration: none;">
                               <i style="color:white;" class="fa-brands fa-codepen w3-hover-opacity"></i>
                          </a>
                     </div>
-                    <a style="font-family: 'Be Vietnam Pro', sans-serif;" aria-label="email me" href="mailto:quantamstudios@gmail.com">QuantamStudios@gmail.com</a>
-               </p>
-          </td>
-          <td style="width: 33.33%;">
-               <div class="decorSVG" style="position: relative;">
-                    <svg width="200" height="70" xmlns="http://www.w3.org/2000/svg">
-                         <g>
-                          <path fill="#4c4c4c" stroke="#000" stroke-width="0" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" id="svg_2"/>
-                          <g transform="rotate(-13.036 46.8142 32.1776)" id="svg_41">
-                           <rect fill="#707070" stroke-width="0" x="51.1251" y="45.02752" width="8.63636" height="8.63636" id="svg_1" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="51.1251" y="36.48207" width="8.63636" height="8.63636" id="svg_3" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="42.58447" y="36.48207" width="8.63636" height="8.63636" id="svg_4" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="42.58447" y="45.02752" width="8.63636" height="8.63636" id="svg_5" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="33.91191" y="45.20451" width="8.63636" height="8.63636" id="svg_6" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="33.91191" y="36.53195" width="8.63636" height="8.63636" id="svg_7" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="42.58447" y="53.70009" width="8.63636" height="8.63636" id="svg_8" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="25.23934" y="45.20451" width="8.63636" height="8.63636" id="svg_9" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="25.23934" y="53.87708" width="8.63636" height="8.63636" id="svg_10" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="53.87708" width="8.63636" height="8.63636" id="svg_11" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="16.56677" y="45.20451" width="8.63636" height="8.63636" id="svg_12" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="7.89421" y="45.20451" width="8.63636" height="8.63636" id="svg_13" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="-0.77836" y="45.20451" width="8.63636" height="8.63636" id="svg_14" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="7.89421" y="36.53195" width="8.63636" height="8.63636" id="svg_15" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="16.56677" y="36.53195" width="8.63636" height="8.63636" id="svg_16" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="25.23934" y="36.53195" width="8.63636" height="8.63636" id="svg_17" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="27.85938" width="8.63636" height="8.63636" id="svg_18" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="19.18681" width="8.63636" height="8.63636" id="svg_19" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="33.91191" y="27.85938" width="8.63636" height="8.63636" id="svg_20" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="33.91191" y="19.18681" width="8.63636" height="8.63636" id="svg_21" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="33.91191" y="10.51425" width="8.63636" height="8.63636" id="svg_22" stroke="#000"/>
-                           <rect fill="#848484" stroke-width="0" x="42.58447" y="27.85938" width="8.63636" height="8.63636" id="svg_23" stroke="#000"/>
-                           <rect fill="#848484" stroke-width="0" x="42.58447" y="19.18681" width="8.63636" height="8.63636" id="svg_24" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="10.51425" width="8.63636" height="8.63636" id="svg_25" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="1.84168" width="8.63636" height="8.63636" id="svg_26" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="51.08005" y="27.85938" width="8.63636" height="8.63636" id="svg_27" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="51.08005" y="19.18681" width="8.63636" height="8.63636" id="svg_28" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="51.08005" y="10.51425" width="8.63636" height="8.63636" id="svg_29" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="68.42518" y="45.20451" width="8.63636" height="8.63636" id="svg_30" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="53.87708" width="8.63636" height="8.63636" id="svg_31" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="59.75261" y="53.87708" width="8.63636" height="8.63636" id="svg_32" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="59.75261" y="45.20451" width="8.63636" height="8.63636" id="svg_33" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="59.75261" y="36.53195" width="8.63636" height="8.63636" id="svg_34" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="68.42518" y="36.53195" width="8.63636" height="8.63636" id="svg_35" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="27.85938" width="8.63636" height="8.63636" id="svg_36" stroke="#000"/>
-                           <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="19.18681" width="8.63636" height="8.63636" id="svg_37" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="77.09775" y="36.53195" width="8.63636" height="8.63636" id="svg_38" stroke="#000"/>
-                           <rect fill="#494949" stroke-width="0" x="77.09775" y="45.20451" width="8.63636" height="8.63636" id="svg_39" stroke="#000"/>
-                           <rect fill="#707070" stroke-width="0" x="85.77031" y="45.20451" width="8.63636" height="8.63636" id="svg_40" stroke="#000"/>
-                          </g>
-                         </g> 
-                    </svg>
-               </div>
-               <div class="buttonMobileHolder" style="text-align: right;">
-                    <button onClick="window.scrollTo({top: 0, behavior: 'smooth'});" class="buttonToTop">
-                         <b>
-                              <i class="fa-solid fa-angles-up"></i>
-                              TOP
-                         </b>
-                    </button>
-                    <div style="float: right;">
-                         <button aria-label="to top" style="align-content: right;" onClick="window.scrollTo({top: 0, behavior: 'smooth'});" class="buttonToTop-Mobile">
+                    <a style="font-family: 'Be Vietnam Pro', sans-serif;" aria-label="email me"
+                         href="mailto:quantamstudios@gmail.com">QuantamStudios@gmail.com</a>
+                    </p>
+               </td>
+               <td style="width: 33.33%;">
+                    <div class="decorSVG" style="position: relative;">
+                         <svg width="200" height="70" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                   <path fill="#4c4c4c" stroke="#000" stroke-width="0"
+                                        d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                                        id="svg_2" />
+                                   <g transform="rotate(-13.036 46.8142 32.1776)" id="svg_41">
+                                        <rect fill="#707070" stroke-width="0" x="51.1251" y="45.02752" width="8.63636"
+                                             height="8.63636" id="svg_1" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="51.1251" y="36.48207" width="8.63636"
+                                             height="8.63636" id="svg_3" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="42.58447" y="36.48207" width="8.63636"
+                                             height="8.63636" id="svg_4" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="42.58447" y="45.02752" width="8.63636"
+                                             height="8.63636" id="svg_5" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="33.91191" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_6" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="33.91191" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_7" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="42.58447" y="53.70009" width="8.63636"
+                                             height="8.63636" id="svg_8" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="25.23934" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_9" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="25.23934" y="53.87708" width="8.63636"
+                                             height="8.63636" id="svg_10" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="53.87708" width="8.63636"
+                                             height="8.63636" id="svg_11" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="16.56677" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_12" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="7.89421" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_13" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="-0.77836" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_14" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="7.89421" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_15" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="16.56677" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_16" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="25.23934" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_17" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="27.85938" width="8.63636"
+                                             height="8.63636" id="svg_18" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="19.18681" width="8.63636"
+                                             height="8.63636" id="svg_19" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="33.91191" y="27.85938" width="8.63636"
+                                             height="8.63636" id="svg_20" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="33.91191" y="19.18681" width="8.63636"
+                                             height="8.63636" id="svg_21" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="33.91191" y="10.51425" width="8.63636"
+                                             height="8.63636" id="svg_22" stroke="#000" />
+                                        <rect fill="#848484" stroke-width="0" x="42.58447" y="27.85938" width="8.63636"
+                                             height="8.63636" id="svg_23" stroke="#000" />
+                                        <rect fill="#848484" stroke-width="0" x="42.58447" y="19.18681" width="8.63636"
+                                             height="8.63636" id="svg_24" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="10.51425" width="8.63636"
+                                             height="8.63636" id="svg_25" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="1.84168" width="8.63636"
+                                             height="8.63636" id="svg_26" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="51.08005" y="27.85938" width="8.63636"
+                                             height="8.63636" id="svg_27" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="51.08005" y="19.18681" width="8.63636"
+                                             height="8.63636" id="svg_28" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="51.08005" y="10.51425" width="8.63636"
+                                             height="8.63636" id="svg_29" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="68.42518" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_30" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="53.87708" width="8.63636"
+                                             height="8.63636" id="svg_31" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="59.75261" y="53.87708" width="8.63636"
+                                             height="8.63636" id="svg_32" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="59.75261" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_33" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="59.75261" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_34" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="68.42518" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_35" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="27.85938" width="8.63636"
+                                             height="8.63636" id="svg_36" stroke="#000" />
+                                        <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="19.18681" width="8.63636"
+                                             height="8.63636" id="svg_37" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="77.09775" y="36.53195" width="8.63636"
+                                             height="8.63636" id="svg_38" stroke="#000" />
+                                        <rect fill="#494949" stroke-width="0" x="77.09775" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_39" stroke="#000" />
+                                        <rect fill="#707070" stroke-width="0" x="85.77031" y="45.20451" width="8.63636"
+                                             height="8.63636" id="svg_40" stroke="#000" />
+                                   </g>
+                              </g>
+                         </svg>
+                    </div>
+                    <div class="buttonMobileHolder" style="text-align: right;">
+                         <button onClick="window.scrollTo({top: 0, behavior: 'smooth'});" class="buttonToTop">
                               <b>
-                                   <i style="align-self: flex-end;" class="fa-solid fa-angles-up"></i>
+                                   <i class="fa-solid fa-angles-up"></i>
+                                   TOP
                               </b>
                          </button>
+                         <div style="float: right;">
+                              <button aria-label="to top" style="align-content: right;"
+                                   onClick="window.scrollTo({top: 0, behavior: 'smooth'});" class="buttonToTop-Mobile">
+                                   <b>
+                                        <i style="align-self: flex-end;" class="fa-solid fa-angles-up"></i>
+                                   </b>
+                              </button>
+                         </div>
                     </div>
-               </div>
-          </td>
-     </table>
-     <div class="decorSVG" style="position: relative;">
-          <svg style="position: absolute; bottom: auto; left: 15vw;" width="200" height="70" xmlns="http://www.w3.org/2000/svg">
+               </td>
+          </table>
+          <div class="decorSVG" style="position: relative;">
+               <svg style="position: absolute; bottom: auto; left: 15vw;" width="200" height="70"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                         <path id="svg_2"
+                              d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                              stroke-width="0" stroke="#000" fill="#4c4c4c" />
+                         <g transform="rotate(-6.79489 151.981 33.4416)" stroke="null" id="svg_70">
+                              <rect stroke="#000" id="svg_49" height="8.63636" width="8.63636" y="20.55195"
+                                   x="169.09091" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_50" height="8.63636" width="8.63636" y="29.12338"
+                                   x="169.09091" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_51" height="8.63636" width="8.63636" y="29.12338"
+                                   x="160.51948" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_52" height="8.63636" width="8.63636" y="37.69481"
+                                   x="160.51948" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_53" height="8.63636" width="8.63636" y="37.69481"
+                                   x="151.94805" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_54" height="8.63636" width="8.63636" y="29.12338"
+                                   x="151.94805" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_55" height="8.63636" width="8.63636" y="29.12338"
+                                   x="143.37662" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_56" height="8.63636" width="8.63636" y="37.69481"
+                                   x="143.37662" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_57" height="8.63636" width="8.63636" y="11.98052"
+                                   x="160.51948" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_58" height="8.63636" width="8.63636" y="11.98052"
+                                   x="169.09091" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_59" height="8.63636" width="8.63636" y="46.26623"
+                                   x="151.94805" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_60" height="8.63636" width="8.63636" y="46.26623"
+                                   x="143.37662" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_61" height="8.63636" width="8.63636" y="20.55195"
+                                   x="151.94805" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_62" height="8.63636" width="8.63636" y="11.98052"
+                                   x="151.94805" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_63" height="8.63636" width="8.63636" y="37.69481"
+                                   x="134.80519" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_64" height="8.63636" width="8.63636" y="46.26623"
+                                   x="134.80519" stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_65" height="8.63636" width="8.63636" y="29.12338"
+                                   x="134.80519" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_66" height="8.63636" width="8.63636" y="37.69481"
+                                   x="126.23377" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_67" height="8.63636" width="8.63636" y="29.12338"
+                                   x="126.23377" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_68" height="8.63636" width="8.63636" y="29.12338"
+                                   x="117.66234" stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_69" height="8.63636" width="8.63636" y="20.55195"
+                                   x="177.66234" stroke-width="0" fill="#e0e0e0" />
+                         </g>
+                         <g transform="rotate(-10.5874 54.0586 43.8312)" stroke="null" id="svg_92">
+                              <rect stroke="#000" id="svg_71" height="8.63636" width="8.63636" y="30.94156" x="71.16883"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_72" height="8.63636" width="8.63636" y="39.51299" x="71.16883"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_73" height="8.63636" width="8.63636" y="39.51299" x="62.5974"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_74" height="8.63636" width="8.63636" y="48.08442" x="62.5974"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_75" height="8.63636" width="8.63636" y="48.08442" x="54.02597"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_76" height="8.63636" width="8.63636" y="39.51299" x="54.02597"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_77" height="8.63636" width="8.63636" y="39.51299" x="45.45454"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_78" height="8.63636" width="8.63636" y="48.08442" x="45.45454"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_79" height="8.63636" width="8.63636" y="22.37013" x="62.5974"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_80" height="8.63636" width="8.63636" y="22.37013" x="71.16883"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_81" height="8.63636" width="8.63636" y="56.65584" x="54.02597"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_82" height="8.63636" width="8.63636" y="56.65584" x="45.45454"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_83" height="8.63636" width="8.63636" y="30.94156" x="54.02597"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_84" height="8.63636" width="8.63636" y="22.37013" x="54.02597"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_85" height="8.63636" width="8.63636" y="48.08442" x="36.88312"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_86" height="8.63636" width="8.63636" y="56.65584" x="36.88312"
+                                   stroke-width="0" fill="#494949" />
+                              <rect stroke="#000" id="svg_87" height="8.63636" width="8.63636" y="39.51299" x="36.88312"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_88" height="8.63636" width="8.63636" y="48.08442" x="28.31169"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_89" height="8.63636" width="8.63636" y="39.51299" x="28.31169"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_90" height="8.63636" width="8.63636" y="39.51299" x="19.74026"
+                                   stroke-width="0" fill="#707070" />
+                              <rect stroke="#000" id="svg_91" height="8.63636" width="8.63636" y="30.94156" x="79.74026"
+                                   stroke-width="0" fill="#e0e0e0" />
+                         </g>
+                    </g>
+               </svg>
+          </div>
+          <div class="decorSVG" style="position: relative;">
+               <svg style="position: absolute; bottom: auto; left: 75vw;" width="100" height="70"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                         <path fill="#4c4c4c" stroke="#000" stroke-width="0"
+                              d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                              id="svg_2" />
+                         <g transform="rotate(-13.036 46.8142 32.1776)" id="svg_41">
+                              <rect fill="#707070" stroke-width="0" x="51.1251" y="45.02752" width="8.63636"
+                                   height="8.63636" id="svg_1" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="51.1251" y="36.48207" width="8.63636"
+                                   height="8.63636" id="svg_3" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="42.58447" y="36.48207" width="8.63636"
+                                   height="8.63636" id="svg_4" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="42.58447" y="45.02752" width="8.63636"
+                                   height="8.63636" id="svg_5" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="33.91191" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_6" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="33.91191" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_7" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="42.58447" y="53.70009" width="8.63636"
+                                   height="8.63636" id="svg_8" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="25.23934" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_9" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="25.23934" y="53.87708" width="8.63636"
+                                   height="8.63636" id="svg_10" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="53.87708" width="8.63636"
+                                   height="8.63636" id="svg_11" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="16.56677" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_12" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="7.89421" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_13" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="-0.77836" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_14" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="7.89421" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_15" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="16.56677" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_16" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="25.23934" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_17" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="27.85938" width="8.63636"
+                                   height="8.63636" id="svg_18" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="19.18681" width="8.63636"
+                                   height="8.63636" id="svg_19" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="33.91191" y="27.85938" width="8.63636"
+                                   height="8.63636" id="svg_20" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="33.91191" y="19.18681" width="8.63636"
+                                   height="8.63636" id="svg_21" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="33.91191" y="10.51425" width="8.63636"
+                                   height="8.63636" id="svg_22" stroke="#000" />
+                              <rect fill="#848484" stroke-width="0" x="42.58447" y="27.85938" width="8.63636"
+                                   height="8.63636" id="svg_23" stroke="#000" />
+                              <rect fill="#848484" stroke-width="0" x="42.58447" y="19.18681" width="8.63636"
+                                   height="8.63636" id="svg_24" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="10.51425" width="8.63636"
+                                   height="8.63636" id="svg_25" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="1.84168" width="8.63636"
+                                   height="8.63636" id="svg_26" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="51.08005" y="27.85938" width="8.63636"
+                                   height="8.63636" id="svg_27" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="51.08005" y="19.18681" width="8.63636"
+                                   height="8.63636" id="svg_28" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="51.08005" y="10.51425" width="8.63636"
+                                   height="8.63636" id="svg_29" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="68.42518" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_30" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="53.87708" width="8.63636"
+                                   height="8.63636" id="svg_31" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="59.75261" y="53.87708" width="8.63636"
+                                   height="8.63636" id="svg_32" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="59.75261" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_33" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="59.75261" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_34" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="68.42518" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_35" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="27.85938" width="8.63636"
+                                   height="8.63636" id="svg_36" stroke="#000" />
+                              <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="19.18681" width="8.63636"
+                                   height="8.63636" id="svg_37" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="77.09775" y="36.53195" width="8.63636"
+                                   height="8.63636" id="svg_38" stroke="#000" />
+                              <rect fill="#494949" stroke-width="0" x="77.09775" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_39" stroke="#000" />
+                              <rect fill="#707070" stroke-width="0" x="85.77031" y="45.20451" width="8.63636"
+                                   height="8.63636" id="svg_40" stroke="#000" />
+                         </g>
+                    </g>
+               </svg>
+          </div>
+     </footer>
+     <!-- Decoration SVGs -->
+     <div class="decorSVG">
+          <svg class="w3-animate-opacity" style="position: absolute; top: 15%; left: 5vw;" width="100" height="120"
+               xmlns="http://www.w3.org/2000/svg">
                <g>
-                    <path id="svg_2" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" stroke-width="0" stroke="#000" fill="#4c4c4c"/>
-                    <g transform="rotate(-6.79489 151.981 33.4416)" stroke="null" id="svg_70">
-                     <rect stroke="#000" id="svg_49" height="8.63636" width="8.63636" y="20.55195" x="169.09091" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_50" height="8.63636" width="8.63636" y="29.12338" x="169.09091" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_51" height="8.63636" width="8.63636" y="29.12338" x="160.51948" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_52" height="8.63636" width="8.63636" y="37.69481" x="160.51948" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_53" height="8.63636" width="8.63636" y="37.69481" x="151.94805" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_54" height="8.63636" width="8.63636" y="29.12338" x="151.94805" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_55" height="8.63636" width="8.63636" y="29.12338" x="143.37662" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_56" height="8.63636" width="8.63636" y="37.69481" x="143.37662" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_57" height="8.63636" width="8.63636" y="11.98052" x="160.51948" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_58" height="8.63636" width="8.63636" y="11.98052" x="169.09091" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_59" height="8.63636" width="8.63636" y="46.26623" x="151.94805" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_60" height="8.63636" width="8.63636" y="46.26623" x="143.37662" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_61" height="8.63636" width="8.63636" y="20.55195" x="151.94805" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_62" height="8.63636" width="8.63636" y="11.98052" x="151.94805" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_63" height="8.63636" width="8.63636" y="37.69481" x="134.80519" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_64" height="8.63636" width="8.63636" y="46.26623" x="134.80519" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_65" height="8.63636" width="8.63636" y="29.12338" x="134.80519" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_66" height="8.63636" width="8.63636" y="37.69481" x="126.23377" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_67" height="8.63636" width="8.63636" y="29.12338" x="126.23377" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_68" height="8.63636" width="8.63636" y="29.12338" x="117.66234" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_69" height="8.63636" width="8.63636" y="20.55195" x="177.66234" stroke-width="0" fill="#e0e0e0"/>
-                    </g>
-                    <g transform="rotate(-10.5874 54.0586 43.8312)" stroke="null" id="svg_92">
-                     <rect stroke="#000" id="svg_71" height="8.63636" width="8.63636" y="30.94156" x="71.16883" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_72" height="8.63636" width="8.63636" y="39.51299" x="71.16883" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_73" height="8.63636" width="8.63636" y="39.51299" x="62.5974" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_74" height="8.63636" width="8.63636" y="48.08442" x="62.5974" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_75" height="8.63636" width="8.63636" y="48.08442" x="54.02597" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_76" height="8.63636" width="8.63636" y="39.51299" x="54.02597" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_77" height="8.63636" width="8.63636" y="39.51299" x="45.45454" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_78" height="8.63636" width="8.63636" y="48.08442" x="45.45454" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_79" height="8.63636" width="8.63636" y="22.37013" x="62.5974" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_80" height="8.63636" width="8.63636" y="22.37013" x="71.16883" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_81" height="8.63636" width="8.63636" y="56.65584" x="54.02597" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_82" height="8.63636" width="8.63636" y="56.65584" x="45.45454" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_83" height="8.63636" width="8.63636" y="30.94156" x="54.02597" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_84" height="8.63636" width="8.63636" y="22.37013" x="54.02597" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_85" height="8.63636" width="8.63636" y="48.08442" x="36.88312" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_86" height="8.63636" width="8.63636" y="56.65584" x="36.88312" stroke-width="0" fill="#494949"/>
-                     <rect stroke="#000" id="svg_87" height="8.63636" width="8.63636" y="39.51299" x="36.88312" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_88" height="8.63636" width="8.63636" y="48.08442" x="28.31169" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_89" height="8.63636" width="8.63636" y="39.51299" x="28.31169" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_90" height="8.63636" width="8.63636" y="39.51299" x="19.74026" stroke-width="0" fill="#707070"/>
-                     <rect stroke="#000" id="svg_91" height="8.63636" width="8.63636" y="30.94156" x="79.74026" stroke-width="0" fill="#e0e0e0"/>
-                    </g>
-                   </g>
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_1" height="11" width="96" y="3.83333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_4" height="11" width="77.66667" y="19.66667"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_5" height="11" width="96" y="35.5" x="2.33333"
+                         fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_6" height="11" width="49.33333" y="52.16667"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_8" height="11" width="59.33334" y="68.83333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_9" height="11" width="96" y="86.33333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_10" height="11" width="86" y="103.83333"
+                         x="2.33333" fill="#4c4c4c" />
+               </g>
           </svg>
      </div>
-     <div class="decorSVG" style="position: relative;">
-          <svg style="position: absolute; bottom: auto; left: 75vw;" width="100" height="70" xmlns="http://www.w3.org/2000/svg">
+     <div class="decorSVG">
+          <svg class="w3-animate-opacity" style="position: absolute; top: 40%; right: 5vw;" width="100" height="120"
+               xmlns="http://www.w3.org/2000/svg">
                <g>
-                <path fill="#4c4c4c" stroke="#000" stroke-width="0" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" id="svg_2"/>
-                <g transform="rotate(-13.036 46.8142 32.1776)" id="svg_41">
-                 <rect fill="#707070" stroke-width="0" x="51.1251" y="45.02752" width="8.63636" height="8.63636" id="svg_1" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="51.1251" y="36.48207" width="8.63636" height="8.63636" id="svg_3" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="42.58447" y="36.48207" width="8.63636" height="8.63636" id="svg_4" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="42.58447" y="45.02752" width="8.63636" height="8.63636" id="svg_5" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="33.91191" y="45.20451" width="8.63636" height="8.63636" id="svg_6" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="33.91191" y="36.53195" width="8.63636" height="8.63636" id="svg_7" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="42.58447" y="53.70009" width="8.63636" height="8.63636" id="svg_8" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="25.23934" y="45.20451" width="8.63636" height="8.63636" id="svg_9" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="25.23934" y="53.87708" width="8.63636" height="8.63636" id="svg_10" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="53.87708" width="8.63636" height="8.63636" id="svg_11" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="16.56677" y="45.20451" width="8.63636" height="8.63636" id="svg_12" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="7.89421" y="45.20451" width="8.63636" height="8.63636" id="svg_13" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="-0.77836" y="45.20451" width="8.63636" height="8.63636" id="svg_14" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="7.89421" y="36.53195" width="8.63636" height="8.63636" id="svg_15" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="16.56677" y="36.53195" width="8.63636" height="8.63636" id="svg_16" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="25.23934" y="36.53195" width="8.63636" height="8.63636" id="svg_17" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="27.85938" width="8.63636" height="8.63636" id="svg_18" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="16.56677" y="19.18681" width="8.63636" height="8.63636" id="svg_19" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="33.91191" y="27.85938" width="8.63636" height="8.63636" id="svg_20" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="33.91191" y="19.18681" width="8.63636" height="8.63636" id="svg_21" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="33.91191" y="10.51425" width="8.63636" height="8.63636" id="svg_22" stroke="#000"/>
-                 <rect fill="#848484" stroke-width="0" x="42.58447" y="27.85938" width="8.63636" height="8.63636" id="svg_23" stroke="#000"/>
-                 <rect fill="#848484" stroke-width="0" x="42.58447" y="19.18681" width="8.63636" height="8.63636" id="svg_24" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="10.51425" width="8.63636" height="8.63636" id="svg_25" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="42.58447" y="1.84168" width="8.63636" height="8.63636" id="svg_26" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="51.08005" y="27.85938" width="8.63636" height="8.63636" id="svg_27" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="51.08005" y="19.18681" width="8.63636" height="8.63636" id="svg_28" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="51.08005" y="10.51425" width="8.63636" height="8.63636" id="svg_29" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="68.42518" y="45.20451" width="8.63636" height="8.63636" id="svg_30" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="53.87708" width="8.63636" height="8.63636" id="svg_31" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="59.75261" y="53.87708" width="8.63636" height="8.63636" id="svg_32" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="59.75261" y="45.20451" width="8.63636" height="8.63636" id="svg_33" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="59.75261" y="36.53195" width="8.63636" height="8.63636" id="svg_34" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="68.42518" y="36.53195" width="8.63636" height="8.63636" id="svg_35" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="27.85938" width="8.63636" height="8.63636" id="svg_36" stroke="#000"/>
-                 <rect fill="#e0e0e0" stroke-width="0" x="68.42518" y="19.18681" width="8.63636" height="8.63636" id="svg_37" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="77.09775" y="36.53195" width="8.63636" height="8.63636" id="svg_38" stroke="#000"/>
-                 <rect fill="#494949" stroke-width="0" x="77.09775" y="45.20451" width="8.63636" height="8.63636" id="svg_39" stroke="#000"/>
-                 <rect fill="#707070" stroke-width="0" x="85.77031" y="45.20451" width="8.63636" height="8.63636" id="svg_40" stroke="#000"/>
-                </g>
-               </g> 
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_1" height="11" width="96" y="3.83333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_4" height="11" width="77.66667" y="19.66667"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_5" height="11" width="96" y="35.5" x="2.33333"
+                         fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_6" height="11" width="49.33333" y="52.16667"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_8" height="11" width="59.33334" y="68.83333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_9" height="11" width="96" y="86.33333"
+                         x="2.33333" fill="#4c4c4c" />
+                    <rect stroke="#000" rx="5" stroke-width="0" id="svg_10" height="11" width="86" y="103.83333"
+                         x="2.33333" fill="#4c4c4c" />
+               </g>
           </svg>
      </div>
-</footer>
-<!-- Decoration SVGs -->
-<div class="decorSVG">
-     <svg class="w3-animate-opacity" style="position: absolute; top: 15%; left: 5vw;" width="100" height="120" xmlns="http://www.w3.org/2000/svg">
-          <g>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_1" height="11" width="96" y="3.83333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_4" height="11" width="77.66667" y="19.66667" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_5" height="11" width="96" y="35.5" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_6" height="11" width="49.33333" y="52.16667" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_8" height="11" width="59.33334" y="68.83333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_9" height="11" width="96" y="86.33333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_10" height="11" width="86" y="103.83333" x="2.33333" fill="#4c4c4c"/>
-          </g>
-     </svg>
-</div>
-<div class="decorSVG">
-     <svg class="w3-animate-opacity" style="position: absolute; top: 40%; right: 5vw;" width="100" height="120" xmlns="http://www.w3.org/2000/svg">
-          <g>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_1" height="11" width="96" y="3.83333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_4" height="11" width="77.66667" y="19.66667" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_5" height="11" width="96" y="35.5" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_6" height="11" width="49.33333" y="52.16667" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_8" height="11" width="59.33334" y="68.83333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_9" height="11" width="96" y="86.33333" x="2.33333" fill="#4c4c4c"/>
-           <rect stroke="#000" rx="5" stroke-width="0" id="svg_10" height="11" width="86" y="103.83333" x="2.33333" fill="#4c4c4c"/>
-          </g>
-     </svg>
-</div>
-<div class="decorSVG">
-     <svg style="position: absolute; top: 75%; right: 5vw;" width="70" height="200" xmlns="http://www.w3.org/2000/svg">
-          <g>
-           <path id="svg_2" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" stroke-width="0" stroke="#000" fill="#4c4c4c"/>
-           <g stroke="null" id="svg_7">
-            <ellipse stroke="#000" ry="1.61483" rx="9.09091" id="svg_3" cy="33.63636" cx="13.63636" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="8.07416" rx="1.97368" id="svg_6" cy="33.51674" cx="13.69617" stroke-width="0" fill="#707070"/>
-           </g>
-           <g stroke="null" id="svg_10">
-            <ellipse stroke="#000" ry="1.37261" rx="7.72727" id="svg_8" cy="63.92045" cx="56.36363" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="6.86304" rx="1.67763" id="svg_9" cy="63.81878" cx="56.41447" stroke-width="0" fill="#707070"/>
-           </g>
-           <g stroke="null" id="svg_13">
-            <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_11" cy="22.41477" cx="37.04545" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_12" cy="22.20843" cx="37.14862" stroke-width="0" fill="#707070"/>
-           </g>
-           <g stroke="null" id="svg_16">
-            <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_14" cy="107.86932" cx="30.68182" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_15" cy="107.66298" cx="30.78499" stroke-width="0" fill="#707070"/>
-           </g>
-           <g stroke="null" id="svg_19">
-            <ellipse stroke="#000" ry="1.2515" rx="7.04545" id="svg_17" cy="159.51705" cx="56.13636" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="6.25748" rx="1.52961" id="svg_18" cy="159.42434" cx="56.18271" stroke-width="0" fill="#707070"/>
-           </g>
-           <g stroke="null" id="svg_22">
-            <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_20" cy="172.86932" cx="31.13636" stroke-width="0" fill="#707070"/>
-            <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_21" cy="172.66298" cx="31.23953" stroke-width="0" fill="#707070"/>
-           </g>
-          </g>    
-     </svg>
-</div>
-<div class="decorSVG">
-         <svg style="position: absolute; top: 75%; left: 5vw;" width="70" height="200" xmlns="http://www.w3.org/2000/svg">
+     <div class="decorSVG">
+          <svg style="position: absolute; top: 75%; right: 5vw;" width="70" height="200"
+               xmlns="http://www.w3.org/2000/svg">
                <g>
-                    <path id="svg_2" d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z" stroke-width="0" stroke="#000" fill="#4c4c4c"/>
+                    <path id="svg_2"
+                         d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                         stroke-width="0" stroke="#000" fill="#4c4c4c" />
                     <g stroke="null" id="svg_7">
-                     <ellipse stroke="#000" ry="1.61483" rx="9.09091" id="svg_3" cy="33.63636" cx="13.63636" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="8.07416" rx="1.97368" id="svg_6" cy="33.51674" cx="13.69617" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="1.61483" rx="9.09091" id="svg_3" cy="33.63636" cx="13.63636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="8.07416" rx="1.97368" id="svg_6" cy="33.51674" cx="13.69617"
+                              stroke-width="0" fill="#707070" />
                     </g>
                     <g stroke="null" id="svg_10">
-                     <ellipse stroke="#000" ry="1.37261" rx="7.72727" id="svg_8" cy="63.92045" cx="56.36363" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="6.86304" rx="1.67763" id="svg_9" cy="63.81878" cx="56.41447" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="1.37261" rx="7.72727" id="svg_8" cy="63.92045" cx="56.36363"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="6.86304" rx="1.67763" id="svg_9" cy="63.81878" cx="56.41447"
+                              stroke-width="0" fill="#707070" />
                     </g>
                     <g stroke="null" id="svg_13">
-                     <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_11" cy="22.41477" cx="37.04545" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_12" cy="22.20843" cx="37.14862" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_11" cy="22.41477" cx="37.04545"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_12" cy="22.20843" cx="37.14862"
+                              stroke-width="0" fill="#707070" />
                     </g>
                     <g stroke="null" id="svg_16">
-                     <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_14" cy="107.86932" cx="30.68182" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_15" cy="107.66298" cx="30.78499" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_14" cy="107.86932" cx="30.68182"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_15" cy="107.66298" cx="30.78499"
+                              stroke-width="0" fill="#707070" />
                     </g>
                     <g stroke="null" id="svg_19">
-                     <ellipse stroke="#000" ry="1.2515" rx="7.04545" id="svg_17" cy="159.51705" cx="56.13636" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="6.25748" rx="1.52961" id="svg_18" cy="159.42434" cx="56.18271" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="1.2515" rx="7.04545" id="svg_17" cy="159.51705" cx="56.13636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="6.25748" rx="1.52961" id="svg_18" cy="159.42434" cx="56.18271"
+                              stroke-width="0" fill="#707070" />
                     </g>
                     <g stroke="null" id="svg_22">
-                     <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_20" cy="172.86932" cx="31.13636" stroke-width="0" fill="#707070"/>
-                     <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_21" cy="172.66298" cx="31.23953" stroke-width="0" fill="#707070"/>
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_20" cy="172.86932" cx="31.13636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_21" cy="172.66298" cx="31.23953"
+                              stroke-width="0" fill="#707070" />
                     </g>
-              </g> 
+               </g>
           </svg>
-</div>
+     </div>
+     <div class="decorSVG">
+          <svg style="position: absolute; top: 75%; left: 5vw;" width="70" height="200"
+               xmlns="http://www.w3.org/2000/svg">
+               <g>
+                    <path id="svg_2"
+                         d="m-247.38819,-33.56367l0.56913,0l0.17587,-0.54067l0.17587,0.54067l0.56913,0l-0.46044,0.33415l0.17588,0.54067l-0.46044,-0.33416l-0.46044,0.33416l0.17588,-0.54067l-0.46044,-0.33415z"
+                         stroke-width="0" stroke="#000" fill="#4c4c4c" />
+                    <g stroke="null" id="svg_7">
+                         <ellipse stroke="#000" ry="1.61483" rx="9.09091" id="svg_3" cy="33.63636" cx="13.63636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="8.07416" rx="1.97368" id="svg_6" cy="33.51674" cx="13.69617"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+                    <g stroke="null" id="svg_10">
+                         <ellipse stroke="#000" ry="1.37261" rx="7.72727" id="svg_8" cy="63.92045" cx="56.36363"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="6.86304" rx="1.67763" id="svg_9" cy="63.81878" cx="56.41447"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+                    <g stroke="null" id="svg_13">
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_11" cy="22.41477" cx="37.04545"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_12" cy="22.20843" cx="37.14862"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+                    <g stroke="null" id="svg_16">
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_14" cy="107.86932" cx="30.68182"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_15" cy="107.66298" cx="30.78499"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+                    <g stroke="null" id="svg_19">
+                         <ellipse stroke="#000" ry="1.2515" rx="7.04545" id="svg_17" cy="159.51705" cx="56.13636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="6.25748" rx="1.52961" id="svg_18" cy="159.42434" cx="56.18271"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+                    <g stroke="null" id="svg_22">
+                         <ellipse stroke="#000" ry="2.78559" rx="15.68182" id="svg_20" cy="172.86932" cx="31.13636"
+                              stroke-width="0" fill="#707070" />
+                         <ellipse stroke="#000" ry="13.92793" rx="3.40461" id="svg_21" cy="172.66298" cx="31.23953"
+                              stroke-width="0" fill="#707070" />
+                    </g>
+               </g>
+          </svg>
+     </div>
 </body>
 <script src="https://kit.fontawesome.com/cc1c8b37f7.js" crossorigin="anonymous"></script>
+
 </html>
