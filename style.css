@@ -351,8 +351,8 @@ code {
 }
 
 .experienceP {
-    margin: none; 
-    text-align: left; 
+    margin: none;
+    text-align: left;
     font-size: 16px;
 }
 
@@ -483,6 +483,45 @@ code {
     text-align: left;
     padding: 0px 10px 0px 10px;
     min-height: 50px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.hidden:nth-child(1) {
+    transition-delay: 100ms;
+}
+.hidden:nth-child(2) {
+    transition-delay: 200ms;
+}
+.hidden:nth-child(3) {
+    transition-delay: 300ms;
+}
+.hidden:nth-child(4) {
+    transition-delay: 400ms;
+}
+.hidden:nth-child(5) {
+    transition-delay: 500ms;
+}
+.hidden:nth-child(6) {
+    transition-delay: 600ms;
+}
+.hidden:nth-child(7) {
+    transition-delay: 700ms;
+}
+.hidden:nth-child(8) {
+    transition-delay: 800ms;
+}
+.hidden:nth-child(9) {
+    transition-delay: 800ms;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .P {
@@ -867,5 +906,11 @@ footer {
 
     .sectionHeading {
         margin: 0px;
+    }
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
     }
 }
