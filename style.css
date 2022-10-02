@@ -366,7 +366,13 @@ code {
 .skill_logo {
     color: white;
     height: 50px;
-    margin: 4px;
+    margin: 1px;
+    background-color: #121212;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -0px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* loop animation stuff, base code for the loop class and animation was written by: Aliaksei Peterson */
