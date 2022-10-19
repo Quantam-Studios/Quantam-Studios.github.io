@@ -547,6 +547,8 @@ code {
     text-decoration: underline;
     text-underline-position: under;
     text-decoration-color: #ff9900;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
 }
 
 .tag {
