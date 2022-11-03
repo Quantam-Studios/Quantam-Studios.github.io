@@ -1,8 +1,7 @@
 html {
     height: 100%;
     width: 100%;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -38,7 +37,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: #fff;
 }
@@ -124,7 +123,7 @@ code {
 .navItem a {
     text-decoration: none;
     color: white;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     transition: all 200ms ease-in;
     padding: 0.5rem 1rem;
     background-color: #353535;
@@ -176,7 +175,7 @@ code {
 }
 
 .buttonMain {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     background: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
     border: none;
@@ -207,7 +206,7 @@ code {
 }
 
 .buttonGit {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -224,7 +223,7 @@ code {
 }
 
 .buttonGetTheme {
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -538,7 +537,12 @@ code {
 .card-body p {
     font-size: 13px;
     margin: 0px;
-    color: #BEBEBE;
+    color: #d4d4d4;
+}
+
+.card-body span {
+    color: white;
+    font-weight: bold;
 }
 
 .playButton {
@@ -593,7 +597,7 @@ footer {
     border-radius: 100px;
     background-image: linear-gradient(45deg, #562b7d 0%, #a852b3 100%);
     transition: all 200ms ease-in;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     border: none;
     outline: none;
@@ -621,7 +625,7 @@ footer {
     border-radius: 100px;
     background-image: linear-gradient(45deg, rgba(255, 120, 90, 1) 0%, rgba(255, 184, 0, 1) 100%);
     transition: all 200ms ease-in;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     border: none;
     outline: none;
