@@ -572,6 +572,12 @@ img.hover-effect {
     opacity: 40%;
 }
 
+img.used-logo {
+    color: white; 
+    height: 30px; 
+    margin: 2px;
+}
+
 .VSCodeSection {
     display: flex;
 }
