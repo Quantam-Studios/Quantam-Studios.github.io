@@ -222,6 +222,23 @@ code {
     color: white;
 }
 
+.botInvite {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    color: #3b3b3b;
+    background: linear-gradient(45deg, #7785cc 0%, #7ea3db 100%);
+}
+
+.botInvite:hover {
+    color: white;
+}
+
 .buttonGetTheme {
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
