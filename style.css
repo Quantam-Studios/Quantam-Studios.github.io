@@ -323,7 +323,7 @@ code {
 }
 
 .tagLine {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .headerItemMainLogo {
@@ -478,39 +478,43 @@ code {
 }
 
 .hidden:nth-child(3) {
-    transition-delay: 300ms;
+    transition-delay: 290ms;
 }
 
 .hidden:nth-child(4) {
-    transition-delay: 400ms;
+    transition-delay: 370ms;
 }
 
 .hidden:nth-child(5) {
-    transition-delay: 500ms;
+    transition-delay: 450ms;
 }
 
 .hidden:nth-child(6) {
-    transition-delay: 600ms;
+    transition-delay: 520ms;
 }
 
 .hidden:nth-child(7) {
-    transition-delay: 700ms;
+    transition-delay: 580ms;
 }
 
 .hidden:nth-child(8) {
-    transition-delay: 800ms;
+    transition-delay: 630ms;
 }
 
 .hidden:nth-child(9) {
-    transition-delay: 900ms;
+    transition-delay: 680ms;
 }
 
 .hidden:nth-child(10) {
-    transition-delay: 1000ms;
+    transition-delay: 720ms;
 }
 
 .hidden:nth-child(11) {
-    transition-delay: 1100ms;
+    transition-delay: 750ms;
+}
+
+.hidden:nth-child(12) {
+    transition-delay: 770ms;
 }
 
 .show {
