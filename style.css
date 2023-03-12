@@ -730,7 +730,7 @@ footer {
     }
 
     .tagLine {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .headerItemMain {
@@ -911,10 +911,6 @@ footer {
 
     .col {
         padding: 0px;
-    }
-
-    .experienceP {
-        font-size: 14px;
     }
 
     .sectionHeading {
