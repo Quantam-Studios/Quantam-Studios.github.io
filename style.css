@@ -239,30 +239,6 @@ code {
     color: white;
 }
 
-.buttonGetTheme {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 200ms ease-in;
-    color: #3b3b3b;
-    background: rgb(188, 110, 197);
-    background: linear-gradient(45deg, rgba(188, 110, 197, 1) 0%, rgba(79, 151, 215, 1) 100%);
-}
-
-.buttonGetTheme:hover {
-    color: white;
-}
-
-.buttonGetThemeHolder {
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-}
-
 .header {
     display: flex;
     max-height: 85%;
@@ -603,21 +579,6 @@ img.used-logo {
     margin: 2px;
 }
 
-.VSCodeSection {
-    display: flex;
-}
-
-.VSCodeMain {
-    justify-content: left;
-    text-align: left;
-}
-
-.themeDemo {
-    background-color: #292b2e;
-    border: 2px solid #5d4d7a;
-    border-radius: 0px 15px 15px 0px;
-}
-
 footer {
     text-align: center;
     background-color: #121212;
@@ -719,15 +680,6 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-    .VSCodeMain {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .buttonGetThemeHolder {
-        margin: 0px;
-        margin-top: 10px;
-    }
 
     .decorSVG {
         display: none;
@@ -842,14 +794,6 @@ footer {
 @media (max-width: 600px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
-    }
-
-    .themeDemo {
-        border-radius: 0px 0px 15px 15px;
-    }
-
-    .VSCodeSection {
-        display: block;
     }
 
     .buttonToTop {
