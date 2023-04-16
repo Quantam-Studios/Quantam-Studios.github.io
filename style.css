@@ -125,7 +125,7 @@ code {
     color: white;
     font-family: 'Rubik', sans-serif;
     transition: all 200ms ease-in;
-    padding: 0.5rem 1rem;
+    padding: 0px, 4px;
     background-color: #353535;
     border-radius: 50px;
     background-image: none;
@@ -137,7 +137,7 @@ code {
 
 .navItem:first-child {
     margin-right: auto;
-    margin-left: 1rem;
+    margin-left: 0px;
 }
 
 .navItem:first-child a:hover {
