@@ -85,53 +85,53 @@
      <!-- Header -->
      <div class="header">
           <div class="decorSVG">
-               <svg class="twinkle" style="position: absolute; left: 20%; top: 420px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
+               <svg class="twinkle" style="position: absolute; left: 20%; top: 420px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
                     <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
                          stroke-width="0" />
                     </g>
                </svg>
-               <svg class="twinkle" style="position: absolute; left: 40%; top: 200px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
+               <svg class="twinkle" style="position: absolute; left: 40%; top: 200px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
                     <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
                          stroke-width="0" />
                     </g>
                </svg>
-               <svg class="twinkle" style="position: absolute; left: 30%; top: 100px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
-                         stroke-width="0"/>
-                    </g>
-               </svg>
-               <svg class="twinkle" style="position: absolute; left: 90%; top: 340px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
+               <svg class="twinkle" style="position: absolute; left: 30%; top: 100px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
                     <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
                          stroke-width="0" />
                     </g>
                </svg>
-               <svg class="twinkle" style="position: absolute; left: 75%; top: 200px; pointer-events: none;" width="10" height="10"
-               xmlns="http://www.w3.org/2000/svg">
-               <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
-                    stroke-width="0" />
-               </g>
-               </svg>
-               <svg class="twinkle" style="position: absolute; left: 78%; top: 400px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
+               <svg class="twinkle" style="position: absolute; left: 90%; top: 340px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
                     <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
                          stroke-width="0" />
                     </g>
                </svg>
-               <svg class="twinkle"style="position: absolute; left: 10%; top: 200px; pointer-events: none;" width="10" height="10"
-                    xmlns="http://www.w3.org/2000/svg">
+               <svg class="twinkle" style="position: absolute; left: 75%; top: 200px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
                     <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
                          stroke-width="0" />
                     </g>
                </svg>
-               <svg class="twinkle"style="position: absolute; left: 85%; top: 500px; pointer-events: none;" width="10" height="10"
-               xmlns="http://www.w3.org/2000/svg">
-               <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
-                    stroke-width="0" />
-               </g>
+               <svg class="twinkle" style="position: absolute; left: 78%; top: 400px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
+                    <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
+                         stroke-width="0" />
+                    </g>
+               </svg>
+               <svg class="twinkle" style="position: absolute; left: 10%; top: 200px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
+                    <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
+                         stroke-width="0" />
+                    </g>
+               </svg>
+               <svg class="twinkle" style="position: absolute; left: 85%; top: 500px; pointer-events: none;" width="10"
+                    height="10" xmlns="http://www.w3.org/2000/svg">
+                    <rect stroke="#000" id="svg_6" height="8.63636" width="8.63636" y="0.78176" x="0.72415"
+                         stroke-width="0" />
+                    </g>
                </svg>
                <svg id="astronaut" class="floating"
                     style="position: absolute; left: 0px; top: 100px; pointer-events: none;" width="230" height="165"
@@ -430,17 +430,29 @@
                          <b>View Projects</b>
                     </button>
                     <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
-                         <a aria-label="Github" href="https://github.com/Quantam-Studios"
+                         <a class="popup" onmouseover="fadeIn('gitHubTop')" onmouseout="fadeOut('gitHubTop')"
+                              aria-label="Github" href="https://github.com/Quantam-Studios"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="gitHubTop">Git Hub</span>
                               <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
                          </a>
-                         <a aria-label="Itch.io" hrechromatic href="https://quantamstudios.itch.io/"
+                         <a class="popup" onmouseover="fadeIn('itchIoTop')" onmouseout="fadeOut('itchIoTop')"
+                              aria-label="Itch.io" hrechromatic href="https://quantamstudios.itch.io/"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="itchIoTop">Itch.io</span>
                               <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
                          </a>
-                         <a aria-label="Code pen" href="https://codepen.io/quantam-studios"
+                         <a class="popup" onmouseover="fadeIn('codePenTop')" onmouseout="fadeOut('codePenTop')"
+                              aria-label="Code pen" href="https://codepen.io/quantam-studios"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="codePenTop">Code Pen</span>
                               <i style="color:white;" class="fa-brands fa-codepen w3-hover-opacity"></i>
+                         </a>
+                         <a class="popup" onmouseover="fadeIn('pixelArtTop')" onmouseout="fadeOut('pixelArtTop')"
+                              aria-label="Pixel Art" href="https://www.pixilart.com/quantamstudios"
+                              style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="pixelArtTop">Pixel Art</span>
+                              <i style="color:white;" class="fa-solid fa-brush w3-hover-opacity"></i>
                          </a>
                     </div>
                </div>
@@ -825,7 +837,9 @@
                                         <p style="font-size: 15px;">
                                              A puzzle game about pushing boxes to form words that complete riddles. It
                                              was created for 2022-2023 FBLA southern-area conference where it got
-                                             <span>1st place</span>. It went on to the Illinois <span>state conference</span> and recieved <span>3rd place</span>. In addition it is qualified for FBLA <span>nationals</span>.
+                                             <span>1st place</span>. It went on to the Illinois <span>state
+                                                  conference</span> and recieved <span>3rd place</span>. In addition it
+                                             is qualified for FBLA <span>nationals</span>.
                                         </p>
                                    </div>
                               </td>
@@ -1376,17 +1390,29 @@
                </td>
                <td style="width: 33.33%;">
                     <div style="margin-top: 10px; font-size: 20px;" class="w3-animate-opacity">
-                         <a aria-label="Github" href="https://github.com/Quantam-Studios"
+                         <a class="popup" onmouseover="fadeIn('gitHubBot')" onmouseout="fadeOut('gitHubBot')"
+                              aria-label="Github" href="https://github.com/Quantam-Studios"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="gitHubBot">Git Hub</span>
                               <i style="color:white;" class="fab fa-github w3-hover-opacity"></i>
                          </a>
-                         <a aria-label="Itch.io" href="https://quantamstudios.itch.io/"
+                         <a class="popup" onmouseover="fadeIn('itchIoBot')" onmouseout="fadeOut('itchIoBot')"
+                              aria-label="Itch.io" hrechromatic href="https://quantamstudios.itch.io/"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="itchIoBot">Itch.io</span>
                               <i style="color:white;" class="fab fa-itch-io w3-hover-opacity"></i>
                          </a>
-                         <a aria-label="Code pen" href="https://codepen.io/quantam-studios"
+                         <a class="popup" onmouseover="fadeIn('codePenBot')" onmouseout="fadeOut('codePenBot')"
+                              aria-label="Code pen" href="https://codepen.io/quantam-studios"
                               style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="codePenBot">Code Pen</span>
                               <i style="color:white;" class="fa-brands fa-codepen w3-hover-opacity"></i>
+                         </a>
+                         <a class="popup" onmouseover="fadeIn('pixelArtBot')" onmouseout="fadeOut('pixelArtBot')"
+                              aria-label="Pixel Art" href="https://www.pixilart.com/quantamstudios"
+                              style="text-decoration: none; padding: 5px;">
+                              <span class="popuptext" id="pixelArtBot">Pixel Art</span>
+                              <i style="color:white;" class="fa-solid fa-brush w3-hover-opacity"></i>
                          </a>
                     </div>
                     <a style="font-family: 'Rubik', sans-serif;" aria-label="email me"
@@ -1712,8 +1738,20 @@
      hiddenElements.forEach((element) => observer.observe(element));
 </script>
 
-<!-- Letter scramble effect -->
+<!-- When the user clicks on div, open the popup -->
+<script>
+     function fadeIn(id) {
+          var popup = document.getElementById(id);
+          popup.classList.toggle("show");
+     }
 
+     function fadeOut(id) {
+          var popup = document.getElementById(id);
+          popup.classList.toggle("show");
+     }
+</script>
+
+<!-- Letter scramble effect -->
 <script>
      const letters = "abcdefghijklmnopqrstuvwxyz";
 
