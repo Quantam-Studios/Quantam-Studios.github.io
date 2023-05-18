@@ -820,7 +820,7 @@ footer {
     }
 
     .tagLine {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .headerItemMain {
@@ -944,6 +944,10 @@ footer {
         height: auto;
     }
 
+    .tagLine {
+        font-size: 13px;
+    }
+
     .hidden {
         opacity: 1;
         transform: translateX(0);
@@ -1034,6 +1038,10 @@ footer {
 
     .sectionHeading {
         margin: 0px;
+    }
+
+    .tagLine {
+        font-size: 12px;
     }
 }
 
