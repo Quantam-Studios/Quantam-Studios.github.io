@@ -491,7 +491,7 @@
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
                                              A C# package for plain text encryption and decryption for simple, but fun
-                                             ciphers with <span>950+</span> downloads. It supports Morse code, Atbash,
+                                             ciphers with <span id="simple-ciphers-downloads">1000+</span> downloads. It supports Morse code, Atbash,
                                              Caesar, Vigenere, and A1Z26 ciphers.
                                         </p>
                                    </div>
@@ -537,7 +537,8 @@
                                    </div>
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
-                                             A C# package for asynchronously interacting with the Open Trivia DB API with <span>75+</span> downloads.
+                                             A C# package for asynchronously interacting with the Open Trivia DB API
+                                             with <span id="open-tdb-wrapper-downloads">75+</span> downloads.
                                         </p>
                                    </div>
                               </td>
@@ -1557,6 +1558,28 @@
                iteration += 1 / 3;
           }, 30);
      }
+</script>
+<!-- Package Downloads -->
+<script>
+    //simple-ciphers
+    getFormattedDownloadCount("simple-ciphers", "simple-ciphers-downloads");
+
+    //OpenTDB-Wrapper
+    getFormattedDownloadCount("OpenTDB-Wrapper", "open-tdb-wrapper-downloads");
+
+    async function getFormattedDownloadCount(packageId, elementId) {
+        try {
+            const response = await fetch(`https://api-v2v3search-0.nuget.org/query?q=packageid:${packageId}`);
+            const data = await response.json();
+            const totalDownloads = data.data[0].totalDownloads;
+            const formattedDownloads = totalDownloads.toLocaleString();
+            console.log(`Total downloads for ${packageId}: ${formattedDownloads}`);
+            document.getElementById(elementId).innerText = formattedDownloads;
+        } catch (error) {
+            console.error('Error fetching package information:', error);
+        }
+    }
+
 </script>
 <!-- Easter Egg -->
 <script>
