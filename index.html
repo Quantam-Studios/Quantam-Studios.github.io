@@ -403,6 +403,8 @@
                                              src="https://static.cdnlogo.com/logos/c/27/c.svg">
                                         <img alt="Raspberry Pi logo" class="hover-effect used-logo"
                                              src="https://www.vectorlogo.zone/logos/raspberrypi/raspberrypi-icon.svg">
+                                        <img alt="SQL logo" class="hover-effect used-logo"
+                                             src="assets/images/sqlite-icon.svg">
                                    </div>
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
@@ -491,7 +493,8 @@
                                    <div class="card-body">
                                         <p style="font-size: 15px;">
                                              A C# package for plain text encryption and decryption for simple, but fun
-                                             ciphers with <span id="simple-ciphers-downloads">1000+</span> downloads. It supports Morse code, Atbash,
+                                             ciphers with <span id="simple-ciphers-downloads">1000+</span> downloads. It
+                                             supports Morse code, Atbash,
                                              Caesar, Vigenere, and A1Z26 ciphers.
                                         </p>
                                    </div>
@@ -1561,24 +1564,24 @@
 </script>
 <!-- Package Downloads -->
 <script>
-    //simple-ciphers
-    getFormattedDownloadCount("simple-ciphers", "simple-ciphers-downloads");
+     //simple-ciphers
+     getFormattedDownloadCount("simple-ciphers", "simple-ciphers-downloads");
 
-    //OpenTDB-Wrapper
-    getFormattedDownloadCount("OpenTDB-Wrapper", "open-tdb-wrapper-downloads");
+     //OpenTDB-Wrapper
+     getFormattedDownloadCount("OpenTDB-Wrapper", "open-tdb-wrapper-downloads");
 
-    async function getFormattedDownloadCount(packageId, elementId) {
-        try {
-            const response = await fetch(`https://api-v2v3search-0.nuget.org/query?q=packageid:${packageId}`);
-            const data = await response.json();
-            const totalDownloads = data.data[0].totalDownloads;
-            const formattedDownloads = totalDownloads.toLocaleString();
-            console.log(`Total downloads for ${packageId}: ${formattedDownloads}`);
-            document.getElementById(elementId).innerText = formattedDownloads;
-        } catch (error) {
-            console.error('Error fetching package information:', error);
-        }
-    }
+     async function getFormattedDownloadCount(packageId, elementId) {
+          try {
+               const response = await fetch(`https://api-v2v3search-0.nuget.org/query?q=packageid:${packageId}`);
+               const data = await response.json();
+               const totalDownloads = data.data[0].totalDownloads;
+               const formattedDownloads = totalDownloads.toLocaleString();
+               console.log(`Total downloads for ${packageId}: ${formattedDownloads}`);
+               document.getElementById(elementId).innerText = formattedDownloads;
+          } catch (error) {
+               console.error('Error fetching package information:', error);
+          }
+     }
 
 </script>
 <!-- Easter Egg -->
