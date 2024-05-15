@@ -1573,7 +1573,6 @@
                const data = await response.json();
                const totalDownloads = data.data[0].totalDownloads;
                const formattedDownloads = totalDownloads.toLocaleString();
-               console.log(`Total downloads for ${packageId}: ${formattedDownloads}`);
                document.getElementById(elementId).innerText = formattedDownloads;
           } catch (error) {
                console.error('Error fetching package information:', error);
