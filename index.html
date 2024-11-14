@@ -235,8 +235,10 @@
                     </div>
                </div>
                <div style="text-align: center;">
-                    <p style="font-size: 16px;">≫ Fullstack Internship @ Goodin Associates • 3 months • Java, XML/XSL, SQL, Google Cloud Platform</p>
-                    <p style="font-size: 16px;">≫ Software Internship @ Goodin Associates • 10 months • Java, XML/XSL</p>
+                    <p style="font-size: 16px;">≫ Fullstack Internship @ Goodin Associates • 3 months • Java, XML/XSL,
+                         SQL, Google Cloud Platform</p>
+                    <p style="font-size: 16px;">≫ Software Internship @ Goodin Associates • 10 months • Java, XML/XSL
+                    </p>
                </div>
           </div>
      </div>
@@ -1506,18 +1508,18 @@
 <!-- Take away slide in effect on mobile for performance. -->
 <script>
      const observer = new IntersectionObserver((entries) => {
-         entries.forEach((entry) => {
-             if (entry.isIntersecting) {
-                 entry.target.classList.add('show');
-             } else {
-                 entry.target.classList.remove('show');
-             }
-         });
+          entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+               } else {
+                    entry.target.classList.remove('show');
+               }
+          });
      });
- 
+
      const hiddenElements = document.querySelectorAll('.hidden');
      hiddenElements.forEach((element) => observer.observe(element));
- </script>
+</script>
 <!-- When the user clicks on div, open the popup -->
 <script>
      function fadeIn(id) {
@@ -1560,6 +1562,30 @@
                iteration += 1 / 3;
           }, 30);
      }
+</script>
+<!-- Title change on visibilty change -->
+<script>
+     const originalTitle = document.title;
+
+     const awayTitles = ["Creating, innovating… and waiting for you!", "There's more to explore in my portfolio!", "Don't miss out on the magic!"];
+
+     let currentRoute = window.location.pathname;
+
+     function getRandomTitle() {
+          const randomIndex = Math.floor(Math.random() * awayTitles.length);
+          return awayTitles[randomIndex];
+     }
+
+     // Detect when visibility changes
+     document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+               // Set a random title if the page is hidden
+               document.title = getRandomTitle();
+          } else {
+               // Restore the original title when the page is visible again
+               document.title = originalTitle;
+          }
+     });
 </script>
 <!-- Package Downloads -->
 <script>
