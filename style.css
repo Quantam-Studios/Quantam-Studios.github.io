@@ -608,15 +608,23 @@ code {
 }
 
 .hidden:nth-child(10) {
-    transition-delay: 720ms;
+    transition-delay: 700ms;
 }
 
 .hidden:nth-child(11) {
-    transition-delay: 750ms;
+    transition-delay: 720ms;
 }
 
 .hidden:nth-child(12) {
-    transition-delay: 770ms;
+    transition-delay: 730ms;
+}
+
+.hidden:nth-child(13) {
+    transition-delay: 740ms;
+}
+
+.hidden:nth-child(14) {
+    transition-delay: 750ms;
 }
 
 .show {
