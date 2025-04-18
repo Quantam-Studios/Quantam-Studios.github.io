@@ -627,6 +627,14 @@ code {
     transition-delay: 750ms;
 }
 
+.hidden:nth-child(15) {
+    transition-delay: 755ms;
+}
+
+.hidden:nth-child(16) {
+    transition-delay: 758ms;
+}
+
 .show {
     opacity: 1;
     transform: translateX(0);
